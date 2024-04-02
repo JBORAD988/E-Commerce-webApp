@@ -4,48 +4,56 @@
 }
 
 .footer {
-  height: 300px;
   color: white;
   background-color: black;
 }
 
-.sec1 {
-  margin-right: 80px;
+.space {
+  height: 330px;
+  padding: 80px;
+  justify-content: space-between;
+}
+
+hr {
+  border-color: rgb(255, 255, 255);
+}
+
+.f-sec1 {
 
   p {
     font-size: 13px;
   }
 
   .input-field {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    border-radius: 5px;
     position: relative;
-    display: inline-block;
   }
 
   .input-field input {
-    padding-right: 40px;
-    border: 2px solid white;
+    padding-right: 50px;
     color: white;
-    border-radius: 5px;
+    border: none;
     background-color: black;
     padding: 5px;
   }
 
+  .input-field input:focus {
+    outline: none;
+  }
+
   .input-field span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    padding: 5px 10px;
+    margin-top: 5px;
+    padding-right: 5px;
   }
 }
 
-.sec2 {
-
-  margin-right: 40px;
+.f-sec2 {
 
   .add {
     font-size: 13px;
-    width: 55%;
     word-wrap: break-word;
     white-space: pre-wrap;
   }
@@ -56,9 +64,82 @@
 
 }
 
-.sec3 {
+.f-sec3 {
 
-    p {
-        font-size: 13px;
+  p {
+    font-size: 13px;
+  }
+
+  h6 {
+    margin-bottom: 20px;
+  }
+}
+
+.f-sec4 {
+
+  p {
+    font-size: 13px;
+  }
+
+  h6 {
+    margin-bottom: 20px;
+  }
+}
+
+.f-sec5 {
+
+  p {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  h6 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .qr {
+    font-size: 7rem;
+  }
+
+  .play {
+    margin-top: 10px;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    .get {
+      font-size: 7px;
+      margin-bottom: 0;
     }
+
+    .store {
+      font-size: 14px;
+      margin-bottom: 1px;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .icon {
+
+    margin-top: 5px;
+    justify-content: space-around;
+
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    color: rgb(90, 85, 85);
+    padding-bottom: 20px;
 }
