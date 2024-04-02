@@ -1,0 +1,64 @@
+.frow {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  height: 300px;
+  color: white;
+  background-color: black;
+}
+
+.sec1 {
+  margin-right: 80px;
+
+  p {
+    font-size: 13px;
+  }
+
+  .input-field {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-field input {
+    padding-right: 40px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    padding: 5px;
+  }
+
+  .input-field span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 5px 10px;
+  }
+}
+
+.sec2 {
+
+  margin-right: 40px;
+
+  .add {
+    font-size: 13px;
+    width: 55%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  h6 {
+    margin-bottom: 20px;
+  }
+
+}
+
+.sec3 {
+
+    p {
+        font-size: 13px;
+    }
+}
