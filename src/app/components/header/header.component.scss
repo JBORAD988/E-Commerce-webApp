@@ -1,0 +1,57 @@
+.h-sec1 {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+
+  .sale {
+    margin-right: 8px;
+    margin-left: 27rem;
+    margin-bottom: 0;
+  }
+
+  .shop {
+    color: white;
+    margin-bottom: 0;
+  }
+
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}
+
+
+img {
+    height: 30px;
+    width: 30px;
+    padding-bottom: 2px;
+}
+
+.dropdown {
+    cursor: pointer;
+    margin-left: 18rem;
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  background-color: #fff; /* Set your desired background color */
+  border: 1px solid #ccc; /* Add borders for better visibility */
+  padding: 10px;
+  margin-top: 5px;
+  /* Adjust positioning */
+  top: calc(100% + 5px); /* Position the dropdown menu below the button */
+  left: 0;
+}
+
+.dropdown {
+  position: relative; /* Ensure dropdown menu is positioned relative to the button */
+}
+
+.dropdown:hover .drop-menu {
+  display: block;
+}
