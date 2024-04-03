@@ -1,0 +1,95 @@
+.contact-div {
+
+  padding: 3rem;
+
+  .frow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hm {
+    color: gray;
+    padding-left: 7rem;
+  }
+
+  .details {
+    margin-top: 5rem;
+    margin-left: 9rem;
+  }
+
+  .call {
+
+    margin-bottom: 1.3rem;
+
+    img {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .cd {
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+  }
+
+  hr {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .form-details {
+    margin-top: 5rem;
+    margin-left: 8rem;
+  }
+
+  .input {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    padding: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .msg {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    width: 40.8rem;
+    height: 14rem;
+    padding: 10px;
+  }
+
+  .msg:focus {
+    outline: none;
+  }
+
+  .input:focus {
+    outline: none;
+  }
+
+
+  .button {
+    text-align: end;
+    margin-right: 2.2rem;
+    margin-top: 1.5rem;
+
+    button {
+      padding: 12px 38px 12px 38px;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      background-color: #DB4444;
+      margin-bottom: 3.5rem;
+    }
+
+    button:hover {
+      background-color: #dd3131;
+    }
+  }
+
+}

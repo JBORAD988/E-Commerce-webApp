@@ -1,8 +1,14 @@
 .error-div {
   padding: 5rem;
 
+  .frow {
+    display: flex;
+    flex-direction: row;
+  }
+
   .he {
     padding-left: 3rem;
+    color: gray;
   }
 
   .not-found {
