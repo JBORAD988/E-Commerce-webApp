@@ -1,9 +1,15 @@
 .h-sec1 {
+  position: relative;
+  z-index: 1;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   padding: 12px;
+
+  .br {
+    display: none;
+  }
 
   .sale {
     margin-right: 8px;
@@ -18,6 +24,13 @@
 
 }
 
+.stick {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  // z-index: 2;
+}
+
 .frow {
   display: flex;
   flex-direction: row;
@@ -25,19 +38,20 @@
 
 
 img {
-    height: 30px;
-    width: 30px;
-    padding-bottom: 2px;
+  height: 30px;
+  width: 30px;
+  padding-bottom: 2px;
 }
 
 .dropdown {
-    cursor: pointer;
-    margin-left: 18rem;
+  cursor: pointer;
+  margin-left: 18rem;
 }
 
 
 .dropdown {
-  position: relative; /* Ensure dropdown menu is positioned relative to the button */
+  position: relative;
+  /* Ensure dropdown menu is positioned relative to the button */
 }
 
 .dropdown:hover .drop-menu {
@@ -47,12 +61,15 @@ img {
 .drop-menu {
   display: none;
   position: absolute;
-  background-color: #121010; /* Background color */
+  background-color: #121010;
+  /* Background color */
   color: white;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Box shadow */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* Box shadow */
   padding: 10px;
   z-index: 1;
-  top: calc(100% - 5px); /* Position the dropdown menu below the button */
+  top: calc(100% - 5px);
+  /* Position the dropdown menu below the button */
   left: 0;
 }
 
@@ -67,14 +84,16 @@ img {
 }
 
 .drop-menu li a {
-  color: white; /* Text color */
+  color: white;
+  /* Text color */
   text-decoration: none;
   display: block;
   padding: 10px;
 }
 
 .drop-menu li a:hover {
-  background-color: #838080; /* Hover background color */
+  background-color: #838080;
+  /* Hover background color */
 }
 
 
@@ -105,16 +124,25 @@ img {
 
 .h-sec2 {
 
+  .menu {
+    display: none;
+  }
+
   padding: 30px 40px 0 40px;
 
   h4 {
     margin-left: 5rem;
   }
 
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
   .link {
 
-    margin-left: 10rem;
-    margin-top: 6px;
+    margin-left: 12rem;
+    // margin-top: 6px;
 
     p {
       cursor: pointer;
@@ -127,18 +155,232 @@ img {
   }
 
   .icon {
-    
+
     padding-top: 10px;
     margin-left: 2rem;
 
-     span {
+    span {
       cursor: pointer;
       margin-right: 15px;
       font-size: 30px;
-     }
+    }
   }
 }
 
 .srch {
   padding-top: 7px;
+}
+
+.i1 {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+
+@media screen and (max-width: 450px) {
+
+  .h-sec1 {
+
+    position: relative;
+    z-index: 1;
+    justify-content: unset;
+
+    p {
+      font-size: 10px;
+
+      .br {
+        display: block;
+      }
+    }
+
+    a {
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    .sale {
+      margin-left: 0px;
+    }
+
+    .dropdown {
+      margin-left: 6rem;
+
+      img {
+        height: 25px;
+        width: 25px;
+      }
+    }
+
+    .mobile-item {
+      font-size: 12px;
+    }
+
+  }
+
+  .stick {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    // z-index: 2;
+  }
+
+
+  .h-sec2 {
+
+    padding: 10px;
+    margin-top: 5px;
+
+    .menu {
+      display: block;
+      margin-top: 3px;
+    }
+
+    h4 {
+      margin-left: 7px;
+    }
+
+    .link {
+      display: none;
+    }
+
+    .input-field {
+      display: none;
+    }
+
+    .icon {
+      display: none;
+    }
+
+    .i1 {
+      display: block;
+      padding-top: 2px;
+      margin-left: 11rem;
+
+      span {
+        margin-right: 5px;
+        font-size: 1.6rem;
+      }
+    }
+
+  }
+
+  .menuhide {
+    margin-left: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 395px) {
+
+  .fcol1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h-sec1 {
+
+    position: relative;
+    z-index: 1;
+    justify-content: unset;
+
+    p {
+      font-size: 10px;
+
+      .br {
+        display: block;
+      }
+    }
+
+    a {
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    .sale {
+      margin-left: 0px;
+    }
+
+    .dropdown {
+      margin-left: 2rem;
+
+      img {
+        height: 25px;
+        width: 25px;
+      }
+    }
+
+    .mobile-item {
+      font-size: 12px;
+    }
+
+  }
+
+  .stick {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    // z-index: 2;
+  }
+
+  .h-sec2 {
+    padding: 10px;
+    margin-top: 5px;
+
+    .menu {
+      display: block;
+      margin-top: 3px;
+    }
+
+    .link {
+      display: none;
+    }
+
+    .input-field {
+      display: none;
+    }
+
+    .icon {
+      display: none;
+    }
+
+    .i1 {
+      display: block;
+      padding-top: 2px;
+      margin-left: 8rem;
+
+      span {
+        margin-right: 5px;
+        font-size: 1.6rem;
+      }
+    }
+
+  }
+
+  h4 {
+    margin-left: 7px;
+  }
+
 }
