@@ -1,6 +1,6 @@
 <div class="h-sec1">
     <div class="frow">
-        <p class="sale">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+        <p class="sale">Summer Sale For All Swim Suits <br class="br"> And Free Express Delivery - OFF 50%!</p>
         <a class="shop" routerLink="">Shop Now</a>
     </div>
     <div class="frow dropdown">
@@ -14,39 +14,71 @@
     </div>
 </div>
 
+<div class="stick">
 
-<div class="h-sec2 frow">
+    <div class="h-sec2 frow">
 
-    <h4>Exclusive</h4>
+        <div class="frow">
+            <span class="material-symbols-outlined menu" (click)="onToggle()">
+                menu
+            </span>
 
-    <div class="frow link">
-        <p>Home</p>
-        <p>Contect</p>
-        <p>About</p>
-        <p>Sign Up</p>
-    </div>
+            <div class="fcol1">
+                <h4>Exclusive</h4>
 
-    <div class="input-field">
-        <input type="text" placeholder="Search">
-        <div style="background-color: rgb(213, 213, 213);">
-            <span class="material-symbols-outlined srch">
-                search
+                <div class="menuhide" *ngIf="menuShow">
+                    <p>Home</p>
+                    <p>Contect</p>
+                    <p>About</p>
+                    <p>Sign Up</p>
+                </div>
+
+            </div>
+
+            <div class="i1">
+                <span class="material-symbols-outlined">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+            </div>
+
+        </div>
+
+        <div class="frow link">
+            <p>Home</p>
+            <p>Contect</p>
+            <p>About</p>
+            <p>Sign Up</p>
+        </div>
+
+        <div class="input-field">
+            <input type="text" placeholder="Search">
+            <div style="background-color: rgb(213, 213, 213);">
+                <span class="material-symbols-outlined srch">
+                    search
+                </span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <span class="material-symbols-outlined">
+                favorite
+            </span>
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            <span class="material-symbols-outlined">
+                account_circle
             </span>
         </div>
+
     </div>
 
-    <div class="icon">
-        <span class="material-symbols-outlined">
-            favorite
-        </span>
-        <span class="material-symbols-outlined">
-            shopping_cart
-        </span>
-        <span class="material-symbols-outlined">
-            account_circle
-        </span>
-    </div>
+    <hr>
 
-    
 </div>
-<hr>

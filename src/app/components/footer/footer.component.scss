@@ -188,12 +188,12 @@ hr {
 
     h6 {
       font-size: 12px;
-      margin-left: 2.5rem;
+      margin-left: 2rem;
     }
 
     p {
       font-size: 10px;
-      margin-left: 2.5rem;
+      margin-left: 2rem;
     }
 
     .input-field {
@@ -226,7 +226,7 @@ hr {
   .f-sec3 {
 
     h6 {
-      margin: 10px 0 10px 110px;
+      margin-left: 90px;
       font-size: 12px;
     }
 
@@ -235,13 +235,11 @@ hr {
       margin-left: 40px;
     }
 
-    .ele {
-      margin-right: 22px;
-    }
-
   }
 
   .f-sec4 {
+
+    margin-left: 0;
 
     h6 {
       margin-left: 20px;
@@ -255,11 +253,13 @@ hr {
   }
 
   .mhr {
+    display: block;
     border-left: 1px solid rgb(255, 255, 255);
     margin: 0 30px 0 30px;
   }
 
   .mhr2 {
+    display: block;
     border-color: rgb(255, 255, 255);
     padding: 0;
   }
@@ -372,7 +372,7 @@ hr {
   .f-sec3 {
 
     h6 {
-      margin: 0 0 10px 85px;
+      margin-left: 80px;
       font-size: 12px;
     }
 
@@ -382,7 +382,7 @@ hr {
     }
 
     .ele {
-      margin-right: 22px;
+      margin-right: 8px;
     }
 
   }
