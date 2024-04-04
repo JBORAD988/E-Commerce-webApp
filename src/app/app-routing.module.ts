@@ -4,9 +4,11 @@ import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CartComponent } from './components/cart/cart.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const routes: Routes = [
-  { path: '', component: CartComponent },
+  { path:'', component: AboutUsComponent },
+  { path: 'cart', component: CartComponent },
   { path: 'error', component: ErrorComponent },
   { path: 'contact', component: ContactComponent },
 

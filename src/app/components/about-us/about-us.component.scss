@@ -1,0 +1,47 @@
+.about-div {
+
+  padding: 3rem 0 3rem 3rem;
+
+  .frow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hm {
+    padding-left: 7rem;
+  }
+
+  .title {
+    margin-top: 7rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .discription {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .d1 {
+    width: 40rem;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+  }
+
+  .d2 {
+
+    img {
+        border-radius: 4px 0 0 4px;
+        width: 38rem;
+        height: 35rem;
+    }
+  }
+
+
+}

@@ -12,6 +12,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatCardModule} from '@angular/material/card';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     LoginComponent,
     ErrorComponent,
     ContactComponent,
-    CartComponent
+    CartComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
