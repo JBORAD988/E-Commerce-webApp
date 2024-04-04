@@ -93,3 +93,178 @@
   }
 
 }
+
+
+.frow1 {
+  display: flex;
+  flex-direction: row;
+}
+
+br {
+  display: none;
+}
+
+
+
+//mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+@media screen and (max-width: 450px) {
+
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fcolr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .frow2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-div {
+    padding: 1rem;
+
+    hr {
+      border: none;
+      border-left: 1px solid black;
+      height: 15rem;
+      margin: 0 45px 0 40px;
+    }
+
+    .frow {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hm {
+      padding-left: 1rem;
+    }
+
+    .form-details {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    .input {
+      padding: 0.7rem;
+      margin-right: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input {
+      width: 16.2rem;
+      margin-left: 2.3rem;
+    }
+
+    .msg {
+      width: 16.2rem;
+      height: 7rem;
+      padding: 10px;
+      margin-left: 2.3rem;
+    }
+
+    .button {
+      text-align: center;
+      // margin-right: 5rem;
+    }
+
+    .details {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+ br {
+  display: block;
+ }
+
+}
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+@media screen and (max-width: 395px) {
+
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fcolr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .frow2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-div {
+    padding: 1rem;
+
+    hr {
+      border: none;
+      border-left: 1px solid black;
+      height: 15rem;
+      margin: 0 22px 0 22px;
+    }
+
+    .frow {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hm {
+      padding-left: 1rem;
+    }
+
+    .form-details {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    .input {
+      padding: 0.7rem;
+      margin-right: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input {
+      width: 16.2rem;
+      margin-left: 0.7rem;
+    }
+
+    .msg {
+      width: 16.2rem;
+      height: 7rem;
+      padding: 10px;
+      margin-left: 0.7rem;
+    }
+
+    .button {
+      text-align: center;
+      // margin-right: 5rem;
+    }
+
+    .details {
+      margin-top: 1rem;
+      margin-left: 0rem;
+    }
+  }
+
+ br {
+  display: block;
+ }
+
+}
