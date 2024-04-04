@@ -8,6 +8,10 @@ import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CartComponent } from './components/cart/cart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -17,11 +21,14 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     LoginComponent,
     ErrorComponent,
-    ContactComponent
+    ContactComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
