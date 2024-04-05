@@ -11,6 +11,13 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { NgToastModule } from 'ng-angular-popup';
 
+import { ErrorComponent } from './components/error/error.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CartComponent } from './components/cart/cart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatCardModule} from '@angular/material/card';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -20,7 +27,11 @@ import { NgToastModule } from 'ng-angular-popup';
 
     HeaderComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ErrorComponent,
+    ContactComponent,
+    CartComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,8 +39,10 @@ import { NgToastModule } from 'ng-angular-popup';
     AppRoutingModule,
     HttpClientModule,
     NgToastModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
