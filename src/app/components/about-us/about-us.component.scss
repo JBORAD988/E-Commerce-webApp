@@ -22,6 +22,7 @@
   }
 
   .d1 {
+    margin-top: 2rem;
     width: 40rem;
 
     h1 {
@@ -38,8 +39,64 @@
 
     img {
         border-radius: 4px 0 0 4px;
-        width: 38rem;
-        height: 35rem;
+        width: 37rem;
+        height: 34rem;
+    }
+  }
+
+  .box {
+    padding-left: 7.4rem;
+    padding-right: 9rem;
+    justify-content: space-between;
+  }
+
+  .all-box {
+    border-radius: 5px;
+    border: 2px solid rgb(179, 175, 175);
+    height: 12.6rem;
+    width: 14.7rem;
+    margin-top: 7rem;
+
+    .o {
+      display: block;
+    }
+
+    .h {
+      display: none;
+    }
+  }
+
+  .all-box:hover {
+    border: none;
+    background-color: #DB4444;
+    color: white;
+
+    .o {
+      display: none;
+    }
+
+    .h {
+      display: block;
+    }
+  }
+
+  .box1 {
+
+    img {
+      margin-left: 4.8rem;
+      margin-top: 1.5rem;
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-top: 1rem;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 0.2rem;
     }
   }
 
