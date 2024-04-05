@@ -6,14 +6,19 @@ import { ErrorComponent } from './components/error/error.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeComponent } from './components/home/home.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent},
-{ path: 'signup', component: SignupComponent},
-  { path:'', component: AboutUsComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: '', component: HomeComponent },
   { path: 'cart', component: CartComponent },
   { path: 'error', component: ErrorComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'wishlist', component: WishlistComponent },
 
 ];
 

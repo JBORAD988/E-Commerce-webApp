@@ -1,35 +1,25 @@
 .error-div {
-  padding: 3rem;
+  padding: 5rem;
 
-  .frow {
-    display: flex;
-    flex-direction: row;
+  br {
+    display: none;
   }
 
   .he {
-    padding-left: 7rem;
-    color: gray;
+    padding-left: 3rem;
   }
 
-  .not-found {
+  .h1 {
+    font-size: 4rem;
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
-    font-size: 5rem;
-    padding: 2rem 5rem 0 5rem;
-    font-weight: 500;
-
-    br {
-      display: none;
-    }
   }
 
-  .disc {
+  .p {
+    margin-top: 3.5rem;
     display: flex;
     justify-content: center;
-
-    br {
-        display: none;
-    }
   }
 
   .button {
@@ -49,126 +39,93 @@
       background-color: #dd3131;
     }
   }
+ 
+}
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+
+
+@media screen and (max-width: 450px) {
+  
+  .error-div {
+    padding: 1rem;
+
+    br {
+    display: block;
+    }
+
+
+    .he {
+      padding-left: 1rem;
+    }
+
+    .h1 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    .p {
+      margin-top: 1rem;
+    }
+
+    .button {
+      margin-top: 1.8rem;
+    }
+
+  }
+
+ 
 }
 
 
 
 
 
-// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-
-@media screen and (max-width: 455px) {
-
-    .error-div {
-  
-      padding: 1rem;
-  
-      .he {
-        padding-left: 0;
-      }
-  
-      .not-found {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 3rem;
-        padding: 0;
-        font-weight: 500;
-  
-        br {
-          display: block;
-        }
-      }
-  
-      .disc {
-  
-          text-align: center;
-  
-          br {
-              display: block;
-          }
-      }
-  
-      .button {
-          text-align: center;
-          margin-top: 3.8rem;
-      
-          button {
-            padding: 10px 30px 10px 30px;
-            border-radius: 5px;
-            color: white;
-            border: none;
-            background-color: #DB4444;
-            margin-bottom: 3.5rem;
-          }
-      
-          button:hover {
-            background-color: #dd3131;
-          }
-        }
-  
-    }
-  
-  }
-  
 
 
 
 
 
 
-// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
 
 @media screen and (max-width: 395px) {
-
+  
   .error-div {
-
     padding: 1rem;
 
+    br {
+    display: block;
+    }
+
+
     .he {
-      padding-left: 0;
+      padding-left: 1rem;
     }
 
-    .not-found {
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      font-size: 3rem;
-      padding: 0;
-      font-weight: 500;
-
-      br {
-        display: block;
-      }
+    .h1 {
+      font-size: 2rem;
+      margin-top: 2rem;
     }
 
-    .disc {
-
-        text-align: center;
-
-        br {
-            display: block;
-        }
+    .p {
+      margin-top: 1rem;
     }
 
     .button {
-        text-align: center;
-        margin-top: 3.8rem;
-    
-        button {
-          padding: 10px 30px 10px 30px;
-          border-radius: 5px;
-          color: white;
-          border: none;
-          background-color: #DB4444;
-          margin-bottom: 3.5rem;
-        }
-    
-        button:hover {
-          background-color: #dd3131;
-        }
-      }
+      margin-top: 1.8rem;
+    }
 
   }
 
+ 
 }

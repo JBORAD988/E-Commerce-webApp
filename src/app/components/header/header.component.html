@@ -36,21 +36,22 @@
 
 
                 </div>
-
+                
                 <div class="i1 fcol">
                     <div>
                         <span class="material-symbols-outlined srch" (click)="onClick()">
                             search
                         </span>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" routerLink="wishlist">
                             favorite
                         </span>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" routerLink="cart">
                             shopping_cart
                         </span>
                         <span class="material-symbols-outlined">
                             account_circle
                         </span>
+
                     </div>
 
                 </div>
@@ -70,10 +71,10 @@
         </div>
 
         <div class="frow link">
-            <p>Home</p>
-            <p>Contect</p>
-            <p>About</p>
-            <p>Sign Up</p>
+            <p routerLink="/">Home</p>
+            <p routerLink="contact">Contect</p>
+            <p routerLink="about">About</p>
+            <p routerLink="signup">Sign Up</p>
         </div>
 
         <div class="input-field">
@@ -86,15 +87,22 @@
         </div>
 
         <div class="icon">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
                 favorite
             </span>
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;" (click)="onHeart()" *ngIf="h2show">
+                favorite
+            </span>
+            <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
+                shopping_cart
+            </span>
+            <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show" (click)="onShop()">
                 shopping_cart
             </span>
             <span class="material-symbols-outlined">
                 account_circle
             </span>
+
         </div>
 
     </div>
