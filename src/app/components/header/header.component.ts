@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   menuShow: boolean = false;
+  searchShow: boolean = false;
 
   onToggle() {
     this.menuShow = !this.menuShow;
+  }
+
+  onClick() {
+    this.searchShow = !this.searchShow
   }
 
 }
