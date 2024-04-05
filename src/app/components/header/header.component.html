@@ -1,11 +1,11 @@
-<div class="h-sec1" style="z-index: 100;" >
+<div class="h-sec1" style="z-index: 100;">
     <div class="frow">
         <p class="sale">Summer Sale For All Swim Suits <br class="br"> And Free Express Delivery - OFF 50%!</p>
         <a class="shop" routerLink="">Shop Now</a>
     </div>
     <div class="frow dropdown">
         <label for="showDrop" class="mobile-item" style="cursor: pointer;">English</label>
-        <ul class="drop-menu" >
+        <ul class="drop-menu">
             <li><a href="#">English</a></li>
             <li><a href="#">Hindi</a></li>
             <li><a href="#">Germen</a></li>
@@ -16,45 +16,66 @@
 
 <div class="stick" style="z-index: 9;">
 
-  <div class="h-sec2 frow">
+    <div class="h-sec2 frow">
 
-      <div class="frow">
-          <span class="material-symbols-outlined menu" (click)="onToggle()">
-              menu
-          </span>
+        <div class="col">
+            <div class="frow">
+                <span class="material-symbols-outlined menu" (click)="onToggle()">
+                    menu
+                </span>
 
-          <div class="fcol1">
-              <h4>Exclusive</h4>
+                <div class="fcol1">
+                    <h2>Exclusive</h2>
 
-              <div class="menuhide" *ngIf="menuShow">
-                  <p>Home</p>
-                  <p>Contect</p>
-                  <p>About</p>
-                  <p>Sign Up</p>
-              </div>
+                    <div class="menuhide" *ngIf="menuShow">
+                        <p>Home</p>
+                        <p>Contect</p>
+                        <p>About</p>
+                        <p>Sign Up</p>
+                    </div>
 
-          </div>
 
-          <div class="i1">
-              <span class="material-symbols-outlined">
-                  favorite
-              </span>
-              <span class="material-symbols-outlined">
-                  shopping_cart
-              </span>
-              <span class="material-symbols-outlined">
-                  account_circle
-              </span>
-          </div>
+                </div>
 
-      </div>
+                <div class="i1 fcol">
+                    <div>
+                        <span class="material-symbols-outlined srch" (click)="onClick()">
+                            search
+                        </span>
+                        <span class="material-symbols-outlined" routerLink="wishlist">
+                            favorite
+                        </span>
+                        <span class="material-symbols-outlined" routerLink="cart">
+                            shopping_cart
+                        </span>
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
 
-      <div class="frow link">
-          <p>Home</p>
-          <p>Contect</p>
-          <p>About</p>
-          <p>Sign Up</p>
-      </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="inp" *ngIf="searchShow">
+                <input type="text" placeholder="What are you looking for">
+                <div style="background-color: rgb(235, 235, 235);">
+                    <span class="material-symbols-outlined srch">
+                        search
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="frow link">
+            <p routerLink="/">Home</p>
+            <p routerLink="contact">Contect</p>
+            <p routerLink="about">About</p>
+            <p routerLink="signup">Sign Up</p>
+        </div>
 
         <div class="input-field">
             <input type="text" placeholder="What are you looking for">
@@ -65,18 +86,27 @@
             </div>
         </div>
 
-      <div class="icon">
-          <span class="material-symbols-outlined">
-              favorite
-          </span>
-          <span class="material-symbols-outlined">
-              shopping_cart
-          </span>
-          <span class="material-symbols-outlined" (click)="onToggle2()" >
-              account_circle
-          </span>
-      </div>
+        <div class="icon">
+            <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
+                favorite
+            </span>
+            <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;" (click)="onHeart()" *ngIf="h2show">
+                favorite
+            </span>
+            <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
+                shopping_cart
+            </span>
+            <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show" (click)="onShop()">
+                shopping_cart
+            </span>
+            <span class="material-symbols-outlined">
+                account_circle
+            </span>
 
-  <hr>
+        </div>
+
+    </div>
+
+    <hr>
 
 </div>

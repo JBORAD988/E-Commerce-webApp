@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatCardModule} from '@angular/material/card';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeComponent } from './components/home/home.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ContactComponent,
     CartComponent,
     AboutUsComponent,
+    HomeComponent,
+    WishlistComponent,
   ],
   imports: [
     BrowserModule,

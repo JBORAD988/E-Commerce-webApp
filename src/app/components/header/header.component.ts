@@ -8,15 +8,33 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   menuShow: boolean = false;
-  menuShow2: boolean = false;
+  searchShow: boolean = false;
+  h1show: boolean = true;
+  h2show: boolean = false;
+
+  s1show: boolean = true;
+  s2show: boolean = false;
 
   onToggle() {
     this.menuShow = !this.menuShow;
   }
 
-  onToggle2(){
-    this.menuShow2 = !this.menuShow2;
-    console.log(this.menuShow2)
+  onClick() {
+    this.searchShow = !this.searchShow
+  }
+
+  onHeart() {
+    this.h1show = !this.h1show;
+    this.h2show = !this.h2show;
+    this.s2show = false;
+    this.s1show = true
+  }
+
+  onShop() {
+    this.s1show = !this.s1show;
+    this.s2show = !this.s2show;
+    this.h2show = false;
+    this.h1show = true;
   }
 
 }
