@@ -8,9 +8,15 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   menuShow: boolean = false;
+  menuShow2: boolean = false;
 
   onToggle() {
     this.menuShow = !this.menuShow;
+  }
+
+  onToggle2(){
+    this.menuShow2 = !this.menuShow2;
+    console.log(this.menuShow2)
   }
 
 }
