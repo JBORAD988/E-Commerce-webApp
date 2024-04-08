@@ -1,11 +1,49 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
+
+
+  constructor(){
+
+  }
+
+
+  ngOnInit(): void {
+    // const icon = document.querySelector(".acc") as HTMLElement;
+    // const menu = document.querySelector(".acc-menu") as HTMLElement;
+    
+
+    // icon.addEventListener("mouseover", () => {
+    //   console.log("mouse ic");
+    //   menu.style.display = 'block';     
+    // });
+
+
+    // icon.addEventListener("mouseleave",()=>{
+    //   console.log("mouse lv");
+    //   menu.style.display = 'none';
+    // })
+
+    // menu.addEventListener("mouseleave",()=>{
+    //   console.log("mouse lv");
+    //   menu.style.display = 'none';
+    // })
+
+    // document.addEventListener("click", (event) => {
+    //   const target = event.target as HTMLElement;
+    //   const isClickInside = menu.contains(target) || icon.contains(target);
+    //   if (!isClickInside) {
+    //     menu.style.display = 'none';
+    //   }
+    // });
+
+
+  }
 
   menuShow: boolean = false;
   searchShow: boolean = false;
@@ -38,5 +76,9 @@ export class HeaderComponent {
     this.h2show = false;
     this.h1show = true;
   }
+
+
+
+  
 
 }

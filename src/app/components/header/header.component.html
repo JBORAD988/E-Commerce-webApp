@@ -87,23 +87,34 @@
         </div>
 
         <div class="icon">
-            <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
-                favorite
-            </span>
-            <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;" (click)="onHeart()" *ngIf="h2show">
-                favorite
-            </span>
-            <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
-                shopping_cart
-            </span>
-            <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show" (click)="onShop()">
-                shopping_cart
-            </span>
-            <span class="material-symbols-outlined" routerLink="account">
-                account_circle
-            </span>
+
+            <div>
+                <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;"
+                    (click)="onHeart()" *ngIf="h2show">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
+                    shopping_cart
+                </span>
+                <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show"
+                    (click)="onShop()">
+                    shopping_cart
+                </span>
+                <span class="material-symbols-outlined acc" routerLink="account" style="z-index: 120;">
+                    account_circle
+                </span>
+
+                <div class="acc-menu">
+                    <h1>Hello</h1>
+                </div>
+            </div>
 
         </div>
+
+
 
     </div>
 

@@ -7,6 +7,12 @@
     flex-direction: row;
   }
 
+  .page {
+    p {
+      font-size: 18px;
+    }
+  }
+
   .fcol {
     display: flex;
     flex-direction: column;
