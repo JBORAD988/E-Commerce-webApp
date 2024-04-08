@@ -42,10 +42,16 @@
         margin-bottom: 6px;
         font-size: 15px;
       }
+
+      p:hover {
+        color: #DB4444;
+      }
     }
   }
 
   .form-details {
+
+    padding-bottom: 5rem;
 
     .three-d-card {
       transform-style: preserve-3d;
@@ -124,6 +130,5 @@
     .save:hover {
       background-color: #f52c2c;
     }
-
   }
 }
