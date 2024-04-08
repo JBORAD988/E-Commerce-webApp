@@ -20,6 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { AccountComponent } from './components/account/account.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
     AboutUsComponent,
     HomeComponent,
     WishlistComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
