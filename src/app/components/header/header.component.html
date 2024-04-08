@@ -28,10 +28,10 @@
                     <h2>Exclusive</h2>
 
                     <div class="menuhide" *ngIf="menuShow">
-                        <p>Home</p>
-                        <p>Contect</p>
-                        <p>About</p>
-                        <p>Sign Up</p>
+                        <p routerLink="/">Home</p>
+                        <p routerLink="contact">Contect</p>
+                        <p routerLink="about">About</p>
+                        <p routerLink="signup">Sign Up</p>
                     </div>
 
 
@@ -48,7 +48,7 @@
                         <span class="material-symbols-outlined" routerLink="cart">
                             shopping_cart
                         </span>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" routerLink="account">
                             account_circle
                         </span>
 
@@ -87,23 +87,34 @@
         </div>
 
         <div class="icon">
-            <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
-                favorite
-            </span>
-            <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;" (click)="onHeart()" *ngIf="h2show">
-                favorite
-            </span>
-            <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
-                shopping_cart
-            </span>
-            <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show" (click)="onShop()">
-                shopping_cart
-            </span>
-            <span class="material-symbols-outlined">
-                account_circle
-            </span>
+
+            <div>
+                <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;"
+                    (click)="onHeart()" *ngIf="h2show">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
+                    shopping_cart
+                </span>
+                <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show"
+                    (click)="onShop()">
+                    shopping_cart
+                </span>
+                <span class="material-symbols-outlined acc" routerLink="account" style="z-index: 120;">
+                    account_circle
+                </span>
+
+                <div class="acc-menu">
+                    <h1>Hello</h1>
+                </div>
+            </div>
 
         </div>
+
+
 
     </div>
 

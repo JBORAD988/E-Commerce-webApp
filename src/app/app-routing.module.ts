@@ -9,6 +9,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
+import { AccountComponent } from './components/account/account.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -22,6 +23,8 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'wishlist', component: WishlistComponent },
+  { path: 'account', component: AccountComponent },
+
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +24,7 @@ import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFireAuth, AngularFireAuthModule} from "@angular/fire/compat/auth";
 import { AuthApi } from './environment/authapi';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
+import { AccountComponent } from './components/account/account.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { ForgotpassComponent } from './components/forgotpass/forgotpass.componen
     WishlistComponent,
     ForgotpassComponent,
 
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +60,7 @@ import { ForgotpassComponent } from './components/forgotpass/forgotpass.componen
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
