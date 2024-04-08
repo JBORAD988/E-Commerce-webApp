@@ -20,6 +20,10 @@ import {MatCardModule} from '@angular/material/card';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFireAuth, AngularFireAuthModule} from "@angular/fire/compat/auth";
+import { AuthApi } from './environment/authapi';
+import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 import { AccountComponent } from './components/account/account.component';
 
 
@@ -37,6 +41,8 @@ import { AccountComponent } from './components/account/account.component';
     AboutUsComponent,
     HomeComponent,
     WishlistComponent,
+    ForgotpassComponent,
+
     AccountComponent,
   ],
   imports: [
@@ -46,7 +52,11 @@ import { AccountComponent } from './components/account/account.component';
     HttpClientModule,
     NgToastModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireModule.initializeApp(AuthApi.firebaseConfig),
+  AngularFireAuthModule,
+
+
   ],
 
   providers: [],

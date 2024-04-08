@@ -9,7 +9,7 @@
         <h6 class="pb-3">Enter your details below</h6>
       </div>
         <div class="form-style form-css">
-            <form [formGroup]="loginForm">
+            <form [formGroup]="loginForm" >
                 <div class="form-group pb-3">
                     <input type="email" placeholder="Email or Phone Number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username">
                 </div>
@@ -20,8 +20,8 @@
                     </span>
                 </div>
                 <div class="pb-2 pd-2-flex">
-                    <div><button type="submit" (click)="onSubmit()" class="btn btn-back-color btn-size color-red  w-100 font-weight-bold mt-2">Log In</button></div>
-                    <div><a href="#" class="color-red forgotpass">Forget Password?</a></div>
+                    <div><button type="button" (click)="onSubmit()" class="btn btn-back-color btn-size color-red  w-100 font-weight-bold mt-2">Log In</button></div>
+                    <div><a [routerLink]="['/','forgotpass']" class="color-red forgotpass">Forget Password?</a></div>
                 </div>
             </form>
 

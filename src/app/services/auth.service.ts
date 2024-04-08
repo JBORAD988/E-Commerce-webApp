@@ -10,7 +10,7 @@ export class AuthService {
 
   private userPayload:any;
   constructor(private http : HttpClient, private   route : Router ) {
-    this.userPayload = this.decodedToken()
+    // this.userPayload = this.decodedToken()
   }
 
 

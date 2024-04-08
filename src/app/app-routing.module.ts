@@ -8,12 +8,15 @@ import { CartComponent } from './components/cart/cart.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 import { AccountComponent } from './components/account/account.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: '', component: HomeComponent },
+  {path: 'forgotpass', component: ForgotpassComponent},
+  { path: 'home', component: HomeComponent },
   { path: 'cart', component: CartComponent },
   { path: 'error', component: ErrorComponent },
   { path: 'contact', component: ContactComponent },
