@@ -1,0 +1,26 @@
+<script src="https://use.fontawesome.com/f59bcd8580.js"></script>
+<div class="container" style="margin-bottom: 4rem;margin-top: 3rem;display: flex;padding-left: 0px;">
+    <div class="col-md-12 d-none d-md-block" style="padding-left: 0px; padding-right: 0px; flex: 1;">
+        <img src="../../../assets/Side Image.png" class="img-fluid" style="min-height:100%; border-right: 1px solid #ccc; width: 100%;" />
+    </div>
+    <div class="col-md-4 bg-white p-5" >
+      <div class="logincard-marg">
+        <h3 class="pb-3">Forgot Password ¯\(ツ)/¯</h3>
+        <h6 class="pb-3">Don't Worry We got Your back ,Enter your Email below</h6>
+      </div>
+        <div class="form-style form-css">
+            <form [formGroup]="ForgotForm" >
+                <div class="form-group pb-3">
+                    <input type="email" placeholder="Enter Your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                </div>
+                <div class="pb-2 pd-2-flex">
+                    <div><button type="button" (click)="recoverPassword()" class="btn btn-back-color btn-size color-red  w-100 font-weight-bold mt-2">Submit</button></div>
+                     <div class="redirect-login d-flex">
+                      <h3 class="login-note">You want to Go back? &nbsp;</h3> <h3 class="link" [routerLink]="['/','login']">Log in</h3>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
