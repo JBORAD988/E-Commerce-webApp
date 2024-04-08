@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { AccountComponent } from './components/account/account.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
     AboutUsComponent,
     HomeComponent,
     WishlistComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,7 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 .cart-div {
 
-  padding: 3rem 7rem 3rem 3rem;
+  padding: 3rem 7rem 3rem 10rem;
 
   .pm {
     display: none;
@@ -10,13 +10,15 @@
     font-weight: 500;
   }
 
+  .page {
+    p {
+      font-size: 18px;
+    }
+  }
+
   .frow {
     display: flex;
     flex-direction: row;
-  }
-
-  .hm {
-    padding-left: 7rem;
   }
 
   .cart-box {
@@ -58,14 +60,14 @@
   .price {
     font-size: 1rem;
     margin-top: 1.5rem;
-    margin-left: 19.5rem;
+    margin-left: 17rem;
   }
 
   .qua {
     width: 4rem;
     height: 2.4rem;
     margin-top: 1rem;
-    margin-left: 27.5rem;
+    margin-left: 25.2rem;
     border-radius: 4px;
     padding: 8px;
   }
@@ -73,7 +75,7 @@
   .sub {
     font-size: 1rem;
     margin-top: 1.5rem;
-    margin-left: 27.4rem;
+    margin-left: 25.4rem;
   }
 
   .btn-style {

@@ -66,18 +66,14 @@ img {
   display: none;
   position: absolute;
   background-color: #121010;
-  /* Background color */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  /* Box shadow */
   padding: 10px;
   z-index: 1;
   top: calc(100% - 5px);
-  /* Position the dropdown menu below the button */
   left: 0;
 }
 
-/* Ensure the dropdown menu disappears when cursor moves away from it */
 .dropdown:hover .drop-menu,
 .drop-menu:hover {
   display: block;
@@ -89,7 +85,6 @@ img {
 
 .drop-menu li a {
   color: white;
-  /* Text color */
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -97,7 +92,6 @@ img {
 
 .drop-menu li a:hover {
   background-color: #838080;
-  /* Hover background color */
 }
 
 
@@ -176,6 +170,30 @@ img {
 
   }
 }
+
+.acc-menu {
+  display: none;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  margin-right: 3rem;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.2);
+  color: white;
+  backdrop-filter: blur(25px);
+  z-index: 120;
+}
+
+.acc:hover + .acc-menu {
+  display: block;
+}
+
+.acc-menu:hover {
+  display: block;
+}
+
 
 .srch {
   padding-top: 1px;
@@ -452,7 +470,7 @@ hr {
       font-size: 2rem;
       padding-right: 5px;
       border: 1px solid rgb(235, 235, 235);
-      background-color: rgb(235, 235, 235);
+      background-color: c;
     }
 
     .icon {
@@ -473,6 +491,7 @@ hr {
   }
 
   .menuhide {
+    display: block;
     margin-left: 10px;
   }
 
