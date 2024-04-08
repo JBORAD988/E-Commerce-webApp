@@ -17,6 +17,8 @@ export class HeaderComponent {
 
   onToggle() {
     this.menuShow = !this.menuShow;
+    console.log(this.menuShow);
+    
   }
 
   onClick() {
