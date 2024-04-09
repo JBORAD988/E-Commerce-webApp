@@ -134,6 +134,58 @@ height:50px;
 }
 
 
+
+@media screen and (max-width:450px) {
+
+
+  .logincard-marg{
+    margin-top: 5px;
+
+    h3{
+      font-size: 2.1rem;
+    }
+
+    h6{
+      font-size: .9rem;
+      font-weight: 500;
+    }
+
+  }
+
+  .btn-size{
+    padding-left: 77px;
+    padding-right: 77px;
+
+  }
+  .btn-goggle-size{
+    padding-left: 45px;
+    padding-right: 45px;
+
+
+  }
+
+
+
+  .redirect-login{
+
+
+    .login-note{
+    font-size: small;
+
+    }
+
+    .link{
+      font-size: small;
+    }
+
+  }
+
+
+
+
+}
+
+
 @media screen and (max-width:375px) {
 
 
