@@ -7,6 +7,11 @@
     flex-direction: row;
   }
 
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
   .page {
     p {
       font-size: 18px;
@@ -33,6 +38,7 @@
 
   .menu {
     padding-right: 25rem;
+
     .title {
       font-size: 20px;
       font-weight: 500;
@@ -66,9 +72,9 @@
         5px 5px 10px rgba(233, 233, 233, 0.3),
         -5px -5px 10px rgba(233, 233, 233, 0.3),
         5px -5px 10px rgba(233, 233, 233, 0.3);
-        padding: 3rem 4rem 4rem 4rem;
-        width: auto;
-        height: 39rem;
+      padding: 3rem 4rem 4rem 4rem;
+      width: auto;
+      height: 39rem;
     }
 
     .title2 {
@@ -137,4 +143,152 @@
       background-color: #f52c2c;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+@media screen and (max-width: 450px) {
+
+  .account-div {
+
+    padding: 2rem;
+
+    .frow1 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      padding-top: 2rem;
+    }
+
+    .page {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .user {
+      padding-right: 0rem;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .form-details {
+
+      padding-bottom: 1rem;
+
+      .three-d-card {
+        padding: 1.5rem;
+        height: 47rem;
+      }
+
+      .title2 {
+        font-size: 17px;
+      }
+
+      .input1 {
+        width: 19.7rem;
+      }
+
+      .inp {
+        margin-right: 0;
+        margin-bottom: 13px;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+@media screen and (max-width: 395px) {
+
+  .account-div {
+
+    padding: 2rem;
+
+    .frow1 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      padding-top: 2rem;
+    }
+
+    .page {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .user {
+      padding-right: 0rem;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .form-details {
+
+      padding-bottom: 1rem;
+
+      .three-d-card {
+        padding: 1.5rem;
+        height: 47rem;
+      }
+
+      .title2 {
+        font-size: 17px;
+      }
+
+      .input1 {
+        width: 16.4rem;
+      }
+
+      .inp {
+        margin-right: 0;
+        margin-bottom: 13px;
+      }
+
+    }
+
+  }
+
 }

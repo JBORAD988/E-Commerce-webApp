@@ -10,9 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 import { AccountComponent } from './components/account/account.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   {path: 'forgotpass', component: ForgotpassComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'about', component: AboutUsComponent },
   { path: 'wishlist', component: WishlistComponent },
   { path: 'account', component: AccountComponent },
+  { path: 'cart/checkout', component: CheckoutComponent },
 
 ];
 
