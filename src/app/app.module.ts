@@ -25,6 +25,7 @@ import {AngularFireAuth, AngularFireAuthModule} from "@angular/fire/compat/auth"
 import { AuthApi } from './environment/authapi';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 import { AccountComponent } from './components/account/account.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { AccountComponent } from './components/account/account.component';
     ForgotpassComponent,
 
     AccountComponent,
+      CheckoutComponent,
   ],
   imports: [
     BrowserModule,
