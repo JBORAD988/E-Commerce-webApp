@@ -14,14 +14,14 @@ export class HeaderComponent implements OnInit{
 
 
   ngOnInit(): void {
-    // const icon = document.querySelector(".acc") as HTMLElement;
-    // const menu = document.querySelector(".acc-menu") as HTMLElement;
+    const icon = document.querySelector(".acc") as HTMLElement;
+    const menu = document.querySelector(".acc-menu") as HTMLElement;
     
 
-    // icon.addEventListener("mouseover", () => {
-    //   console.log("mouse ic");
-    //   menu.style.display = 'block';     
-    // });
+    icon.addEventListener("click", () => {
+      console.log("mouse ic");
+      menu.style.display = 'block';     
+    });
 
 
     // icon.addEventListener("mouseleave",()=>{
@@ -34,13 +34,13 @@ export class HeaderComponent implements OnInit{
     //   menu.style.display = 'none';
     // })
 
-    // document.addEventListener("click", (event) => {
-    //   const target = event.target as HTMLElement;
-    //   const isClickInside = menu.contains(target) || icon.contains(target);
-    //   if (!isClickInside) {
-    //     menu.style.display = 'none';
-    //   }
-    // });
+    document.addEventListener("click", (event) => {
+      const target = event.target as HTMLElement;
+      const isClickInside = menu.contains(target) || icon.contains(target);
+      if (!isClickInside) {
+        menu.style.display = 'none';
+      }
+    });
 
 
   }
