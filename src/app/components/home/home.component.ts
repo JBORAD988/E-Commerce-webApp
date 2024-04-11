@@ -87,8 +87,23 @@ export class HomeComponent implements OnInit {
     const icon1 = document.querySelector(".click1") as HTMLElement;
     const mcat = document.querySelector(".mcat") as HTMLElement;
     const wcat = document.querySelector(".wcat") as HTMLElement;
+    const move = document.querySelector(".move") as HTMLElement;
     // const btn = document.querySelector(".ctn-btn2") as HTMLElement;
     // const btn2 = document.querySelector(".ctn-btn22") as HTMLElement;
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY === 0) {
+        move.style.display = 'none';
+      } else {
+        move.style.display = 'block';
+      }
+    })
+
+
+    move.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
 
     icon.addEventListener("click", () => {
       mcat.style.display = 'block';

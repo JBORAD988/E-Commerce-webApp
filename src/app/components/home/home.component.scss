@@ -1,5 +1,18 @@
 .home-div {
 
+  position: relative;
+
+  .move {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+    color: white;
+  }
+
   .frow {
     display: flex;
     flex-direction: row;
@@ -16,6 +29,26 @@
   }
 
   .sec1 {
+
+    .imgbtn {
+      position: relative;
+    }
+
+    .shop {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 3rem;
+      margin-left: 4.3rem;
+      p {
+        margin-top: 2px;
+        margin-right: 3px;
+        text-decoration: underline;
+        color: white;
+      }
+      span {
+        color: white;
+      }
+    }
 
     p {
       font-weight: 500;
@@ -78,7 +111,7 @@
       backdrop-filter: blur(2px) !important;
     }
 
-    .prod-swip {  
+    .prod-swip {
       padding: 3rem 0 0 10rem;
 
       img {
@@ -92,7 +125,7 @@
   .sec2 {
     padding: 9rem 12rem 0 12rem;
 
-  
+
 
 
     .button {
@@ -189,7 +222,7 @@
   .heart {
     margin-top: 3.2rem;
     padding: 7px 0 0 6px;
-  
+
   }
 
   .block {
@@ -357,7 +390,7 @@
     }
 
   }
-  
+
 
   .sec7 {
     padding: 0 12rem 0 12rem;
