@@ -2,9 +2,16 @@
 
   padding: 3rem 0 3rem 10rem;
 
-  .frow {
+  .frow,
+  .frowr,
+  .frowf {
     display: flex;
     flex-direction: row;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .fcol {
@@ -34,21 +41,19 @@
       img {
         margin-bottom: 1rem;
         width: 100%;
-        height: 70px;
+        height: 120px;
         object-fit: cover;
       }
     }
 
     .imgsec2 {
-      border: 1px solid black;
-      width: 350px; /* Set the fixed width of the card */
-      height: 200px; /* Set the fixed height of the card */
-      overflow: hidden; /* Hide overflowing content */
-      border: 1px solid #ccc; /* Optional: Add border for aesthetics */
-      border-radius: 8px; /* Optional: Add border-radius for aesthetics */
+      width: 36rem;
+      height: 33rem;
+      overflow: hidden;
+      border-radius: 8px;
       position: relative;
       display: inline-block;
-      margin-bottom: 20px; /* Optional: Add margin between cards */
+      margin-bottom: 20px;
 
       img {
         width: 100%;
@@ -56,6 +61,695 @@
         object-fit: cover;
       }
     }
+
+    .details {
+      margin-left: 6rem;
+      width: 30%;
+
+      h1 {
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .color {
+        font-size: 18px;
+      }
+
+      .star {
+        font-size: 22px;
+        margin-right: 10px;
+      }
+
+      .hr {
+        margin: 0 15px 0 15px;
+        height: 20px;
+        border: 1px solid black;
+      }
+
+      .price {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .review {
+        margin-bottom: 5px;
+      }
+
+      hr {
+        border: 1px solid rgb(46, 46, 46);
+      }
+
+      .gray {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        margin: 0 10px 0 10px;
+      }
+
+      .red {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        background-color: #DB4444;
+        border-radius: 50%;
+      }
+
+      .valuebtn {
+        height: 2.5rem;
+        width: 8rem;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .min {
+          cursor: pointer;
+          padding-top: 6px;
+          width: 2.3rem;
+          font-size: 50px;
+          border-right: 1px solid black;
+        }
+
+        .max {
+          cursor: pointer;
+          padding-top: 7px;
+          width: 2.3rem;
+          font-size: 30px;
+          border-left: 1px solid black;
+        }
+
+        .max:hover,
+        .min:hover {
+          background-color: #DB4444;
+          color: white;
+        }
+
+        .value {
+          padding-top: 7px;
+          font-size: 25px;
+        }
+      }
+
+      .butbtn {
+        margin-left: 15px;
+        height: 2.5rem;
+        width: 8rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #DB4444;
+        color: white;
+        margin-right: 10px;
+      }
+
+      .butbtn:hover {
+        background-color: red;
+      }
+
+      .btns {
+        margin-top: 12px;
+        margin-bottom: 10px;
+      }
+
+      .heart {
+        cursor: pointer;
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 3px;
+
+        span {
+          font-size: 33px;
+        }
+      }
+
+      .delivery {
+        margin-top: 2rem;
+        width: 24rem;
+        height: auto;
+        border-radius: 5px;
+        border: 1px solid black;
+
+        img {
+          margin-right: 10px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+
+        .c1 {
+          border-bottom: 1px solid black;
+          padding: 1rem;
+        }
+
+
+        .c2 {
+          padding: 1rem;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+
+        .disc {
+          font-size: 12px;
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+  }
+
+  .sec2 {
+
+    width: 90%;
+    margin-top: 4rem;
+
+    .block {
+      border-radius: 3px;
+      background-color: #DB4444;
+      height: 2.1rem;
+      width: 0.9rem;
+    }
+
+    .categories {
+      margin-bottom: 3rem;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 6px;
+      margin-left: 15px;
+    }
+
+
+
+    .disc {
+      text-decoration: line-through;
+      margin-left: 5px;
+    }
+
+    .prod-name {
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .price p {
+      font-size: 15px;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .cart-btn {
+      display: none;
+      position: absolute;
+      width: 16.8rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .image:hover+.cart-btn {
+      display: block;
+    }
+
+    .cart-btn:hover {
+      display: block;
+    }
+
+    .delete {
+      margin-top: 0.6rem;
+      height: 2.2rem;
+      width: 2.2rem;
+      padding: 6px 0 0 5px;
+      border-radius: 80%;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(-50%);
+      border: none;
+      cursor: pointer;
+    }
+
+    .heart {
+      margin-top: 3.2rem;
+      padding: 7px 0 0 6px;
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+
+
+@media screen and (max-width: 450px) {
+
+    .product-div {
+      padding: 1rem;
+  
+      .frow {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .fcol {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .frowr {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+  
+      .wrap {
+          display: flex;
+          flex-wrap: wrap;
+      }
+  
+      .page {
+        p {
+          font-size: 15px;
+        }
+      }
+  
+  
+      .sec1 {
+  
+        padding-top: 1rem;
+  
+        .imgsec1 {
+          max-width: 6rem;
+          max-height: 7rem;
+          margin-right: 3rem;
+  
+          img {
+            margin-right: 13px;
+            margin-bottom: 1rem;
+            height: 60px;
+          }
+        }
+  
+        .imgsec2 {
+          width: 21rem;
+          height: 11rem;
+          margin-bottom: 20px;
+        }
+  
+        .details {
+  
+          margin-left: 1rem;
+          width: 80%;
+  
+          h1 {
+            font-size: 18px;
+            margin-bottom: 1px;
+          }
+  
+          .star {
+            font-size: 16px;
+          }
+  
+          .price {
+            margin-bottom: 7px;
+            font-size: 21px;
+          }
+  
+          .prod-disc {
+            font-size: 12px;
+          }
+  
+          .color {
+            font-size: 15px;
+          }
+  
+  
+          .valuebtn {
+            height: 2.5rem;
+            width: 7rem;
+  
+            .min {
+              padding-top: 8px;
+              width: 2.1rem;
+              font-size: 32px;
+            }
+  
+            .max {
+              padding-top: 8px;
+              width: 2.1rem;
+              font-size: 30px;
+            }
+  
+            .value {
+              padding-top: 8px;
+              font-size: 20px;
+            }
+  
+          }
+  
+          .butbtn {
+              width: 6rem;
+          }
+  
+          .delivery {
+              width: 19rem;
+  
+              .title {
+                font-size: 15px;
+              }
+      
+              .disc {
+                font-size: 10px;
+              }
+            }
+        }
+      }
+  
+      .sec2 {
+  
+          width: 95%;
+          margin-top: 1rem;
+      
+          .block {
+            margin-top: 6px;
+          }
+      
+          .categories {
+            margin-bottom: 3rem;
+            margin-top: 12px;
+            margin-left: 15px;
+          }
+      
+  
+          .disc {
+            text-decoration: line-through;
+            margin-left: 5px;
+          }
+      
+          .prod-name {
+              font-size: 15px;
+              width: 9rem;
+            }
+      
+          .price p {
+            font-size: 15px;
+          }
+      
+          .image-container {
+            position: relative;
+            display: inline-block;
+          }
+  
+          .image {
+              height: 8rem;
+              width: 9rem;
+          }
+      
+          .delete {
+              margin-top: 0.3rem;
+              height: 1.7rem;
+              width: 1.7rem;
+              padding: 4px 0 0 4px;
+              top: 0;
+              right: 0;
+        
+              span {
+                font-size: 20px;
+              }
+            }
+        
+            .cart-btn {
+              display: block;
+              width: 9rem;
+              height: 2rem;
+              padding: 0;
+              text-align: center;
+            }
+      
+          .heart {
+            margin-top: 2.3rem;
+            padding: 5px 0 0 4px;
+          }
+      
+        }
+  
+  
+    }
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+
+
+
+
+
+@media screen and (max-width: 395px) {
+
+  .product-div {
+    padding: 1rem;
+
+    .frow {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fcol {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .frowr {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .page {
+      p {
+        font-size: 15px;
+      }
+    }
+
+
+    .sec1 {
+
+      padding-top: 1rem;
+
+      .imgsec1 {
+        max-width: 6rem;
+        max-height: 7rem;
+        margin-right: 3rem;
+
+        img {
+          margin-right: 13px;
+          margin-bottom: 1rem;
+          height: 60px;
+        }
+      }
+
+      .imgsec2 {
+        width: 21rem;
+        height: 11rem;
+        margin-bottom: 20px;
+      }
+
+      .details {
+
+        margin-left: 1rem;
+        width: 80%;
+
+        h1 {
+          font-size: 18px;
+          margin-bottom: 1px;
+        }
+
+        .star {
+          font-size: 16px;
+        }
+
+        .price {
+          margin-bottom: 7px;
+          font-size: 21px;
+        }
+
+        .prod-disc {
+          font-size: 12px;
+        }
+
+        .color {
+          font-size: 15px;
+        }
+
+
+        .valuebtn {
+          height: 2.5rem;
+          width: 7rem;
+
+          .min {
+            padding-top: 8px;
+            width: 2.1rem;
+            font-size: 32px;
+          }
+
+          .max {
+            padding-top: 8px;
+            width: 2.1rem;
+            font-size: 30px;
+          }
+
+          .value {
+            padding-top: 8px;
+            font-size: 20px;
+          }
+
+        }
+
+        .butbtn {
+            width: 6rem;
+        }
+
+        .delivery {
+            width: 19rem;
+
+            .title {
+              font-size: 15px;
+            }
+    
+            .disc {
+              font-size: 10px;
+            }
+          }
+      }
+    }
+
+    .sec2 {
+
+        width: 95%;
+        margin-top: 1rem;
+    
+        .block {
+          margin-top: 6px;
+        }
+    
+        .categories {
+          margin-bottom: 3rem;
+          margin-top: 12px;
+          margin-left: 15px;
+        }
+    
+
+        .disc {
+          text-decoration: line-through;
+          margin-left: 5px;
+        }
+    
+        .prod-name {
+            font-size: 15px;
+            width: 9rem;
+          }
+    
+        .price p {
+          font-size: 15px;
+        }
+    
+        .image-container {
+          position: relative;
+          display: inline-block;
+        }
+
+        .image {
+            height: 8rem;
+            width: 9rem;
+        }
+    
+        .delete {
+            margin-top: 0.3rem;
+            height: 1.7rem;
+            width: 1.7rem;
+            padding: 4px 0 0 4px;
+            top: 0;
+            right: 0;
+      
+            span {
+              font-size: 20px;
+            }
+          }
+      
+          .cart-btn {
+            display: block;
+            width: 9rem;
+            height: 2rem;
+            padding: 0;
+            text-align: center;
+          }
+    
+        .heart {
+          margin-top: 2.3rem;
+          padding: 5px 0 0 4px;
+        }
+    
+      }
+
+
   }
 
 }
