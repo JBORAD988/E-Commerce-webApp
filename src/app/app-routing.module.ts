@@ -11,6 +11,7 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 import { AccountComponent } from './components/account/account.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

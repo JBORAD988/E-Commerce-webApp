@@ -55,9 +55,7 @@ export class HeaderComponent implements OnInit{
   s2show: boolean = false;
 
   onToggle() {
-    this.menuShow = !this.menuShow;
-    console.log(this.menuShow);
-    
+    this.menuShow = !this.menuShow;    
   }
 
   onClick() {

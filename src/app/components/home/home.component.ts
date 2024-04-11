@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import swiper from 'swiper';
 import Swiper from 'swiper';
 
 @Component({
@@ -10,7 +9,28 @@ import Swiper from 'swiper';
 export class HomeComponent implements OnInit {
 
 
+
+  autoplaycard : string = '{"delay": 3000, "speed": 1000}'
+
+  
+
+
   ngOnInit(): void {
+
+
+    var autoplay = document.querySelector('swiper-container') as HTMLElement
+
+
+
+    autoplay.addEventListener("mouseover",()=>{
+    this.autoplaycard = "false"
+
+    })
+
+    autoplay.addEventListener("mouseleave",()=>{
+      this.autoplaycard = '{"delay": 3000, "speed": 1000}'
+      
+    })
 
 
     // var time = document.getElementById("time");
@@ -83,6 +103,7 @@ export class HomeComponent implements OnInit {
 
     });
 
+  
     const icon = document.querySelector(".click") as HTMLElement;
     const icon1 = document.querySelector(".click1") as HTMLElement;
     const mcat = document.querySelector(".mcat") as HTMLElement;

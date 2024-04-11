@@ -26,6 +26,7 @@ import { AuthApi } from './environment/authapi';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 import { AccountComponent } from './components/account/account.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 
     AccountComponent,
     CheckoutComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

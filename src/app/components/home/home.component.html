@@ -39,14 +39,17 @@
             <p>Baby's & Toy's</p>
             <p>Groceries & Pets</p>
             <p>Helath & Beauty</p>
+            <h1>'{{autoplaycard}}'</h1>
+            <h4> autoplay='{{autoplaycard}}'</h4>
         </div>
 
         <hr>
 
         <div class="prod-swip">
 
-            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true" autoplay='{"delay": 3000, "speed": 1000000}'>
-
+            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true"  [autoplay]='autoplaycard' >
+                <!-- autoplay='{"delay": 3000, "speed": 1000}' -->
+  
                 <swiper-slide>
                     <div class="imgbtn">
                         <img src="./assets/p1.png" loading="lazy" />
@@ -550,9 +553,9 @@
 
     <div class="sec5">
 
-        <div>
+        <div class="pstr">
             <img src="./assets/poster.png">
-            <div>
+            <div class="buybtn">
                 <button>Buy Now</button>
             </div>
         </div>
