@@ -10,9 +10,11 @@ export class HomeComponent implements OnInit {
 
 
 
+
   autoplaycard : string = '{"delay": 3000, "speed": 1000}'
 
-  
+
+
 
 
   ngOnInit(): void {
@@ -29,7 +31,7 @@ export class HomeComponent implements OnInit {
 
     autoplay.addEventListener("mouseleave",()=>{
       this.autoplaycard = '{"delay": 3000, "speed": 1000}'
-      
+
     })
 
 
@@ -103,7 +105,7 @@ export class HomeComponent implements OnInit {
 
     });
 
-  
+
     const icon = document.querySelector(".click") as HTMLElement;
     const icon1 = document.querySelector(".click1") as HTMLElement;
     const mcat = document.querySelector(".mcat") as HTMLElement;
@@ -161,9 +163,62 @@ export class HomeComponent implements OnInit {
       }
     });
 
+  }
+
+// timer
 
 
+d1: any
+m1: any
+h1:any
+s1:any
 
+d2: any
+m2: any
+h2:any
+s2:any
+
+  constructor() {
+    this.timer1();
+    setInterval(() => {
+      this.timer1();
+      this.timer2();
+    }, 1000);
+  }
+
+
+  timer1() {
+    const currentDate = new Date();
+    const targetDate = new Date(2024, 3, 12, 3,4,45,43434);
+    const timeDifference = targetDate.getTime() - currentDate.getTime();
+
+    const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
+    const remainingMinutes = Math.floor((timeDifference / 1000 / 60) % 60);
+    const remainingHours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+    const remainingDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    this.s1 = remainingSeconds;
+    this.m1 = remainingMinutes;
+    this.d1 = remainingDays;
+    this.h1 = remainingHours;
+  }
+
+
+  timer2() {
+    const currentDate = new Date();
+    const targetDate = new Date(2024, 3, 25, 3,4,45,43434);
+    const timeDifference = targetDate.getTime() - currentDate.getTime();
+
+    const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
+    const remainingMinutes = Math.floor((timeDifference / 1000 / 60) % 60);
+    const remainingHours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+    const remainingDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+
+    this.s2 = remainingSeconds;
+    this.m2 = remainingMinutes;
+    this.d2 = remainingDays;
+    this.h2 = remainingHours;
   }
 
 

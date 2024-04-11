@@ -39,8 +39,8 @@
             <p>Baby's & Toy's</p>
             <p>Groceries & Pets</p>
             <p>Helath & Beauty</p>
-            <h1>'{{autoplaycard}}'</h1>
-            <h4> autoplay='{{autoplaycard}}'</h4>
+            <!-- <h1>'{{autoplaycard}}'</h1>
+            <h4> autoplay='{{autoplaycard}}'</h4> -->
         </div>
 
         <hr>
@@ -49,7 +49,7 @@
 
             <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true"  [autoplay]='autoplaycard' >
                 <!-- autoplay='{"delay": 3000, "speed": 1000}' -->
-  
+
                 <swiper-slide>
                     <div class="imgbtn">
                         <img src="./assets/p1.png" loading="lazy" />
@@ -109,8 +109,37 @@
             <p class="categories" style="color: #DB4444;">Today's</p>
         </div>
 
+
         <div class="title-btn frow space">
-            <p>Flash Sales</p>
+            <div class="d-flex flex-row justify-content-between" style="width: 550px;">
+              <p style="padding-top: 5%;">Flash Sales</p>
+            <div class="inner-dflex-clock1">
+              <div class="clock-style-2 ">
+                <div class="round"> <div class="c-up1">Days</div><div class="c-down1">{{d2}}</div></div>
+              </div>
+              <div class="clock-style-2 ">
+                <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+              </div>
+              <div class="clock-style-2 ">
+                <div class="round"><div class="c-up1">Hours</div><div class="c-down1">{{h2}}</div> </div>
+              </div>
+              <div class="clock-style-2 ">
+                <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+              </div>
+              <div class="clock-style-2 ">
+                <div class="round"><div class="c-up1">Minutes</div><div class="c-down1">{{m2}}</div> </div>
+              </div>
+              <div class="clock-style-2 ">
+                <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+              </div>
+              <div class="clock-style-2 ">
+                <div class="round"><div class="c-up1">Seconds</div><div class="c-down1">{{s2}}</div> </div>
+              </div>
+            </div>
+            </div>
+
+
+
             <div>
                 <img class="swiper-button-testmonials-next" src="./assets/leftArrow.png">
                 <img class="swiper-button-testmonials-prev" src="./assets/rightArrow.png">
@@ -555,6 +584,22 @@
 
         <div class="pstr">
             <img src="./assets/poster.png">
+            <div class="round-timer">
+              <div class="inner-clock-1">
+              <div class="clock-style-1 ">
+                <div class="round"><div class="c-up">{{d1}}</div> <div class="c-down">Days</div></div>
+              </div>
+              <div class="clock-style-1">
+                <div class="round"><div class="c-up">{{h1}}</div> <div class="c-down">Hours</div></div>
+              </div>
+              <div class="clock-style-1">
+                <div class="round"><div class="c-up">{{m1}}</div> <div class="c-down">Minutes</div></div>
+              </div>
+              <div class="clock-style-1">
+                <div class="round"><div class="c-up">{{s1}}</div> <div class="c-down">Seconds</div></div>
+              </div>
+            </div>
+          </div>
             <div class="buybtn">
                 <button>Buy Now</button>
             </div>
@@ -893,7 +938,7 @@
 
 
 
-<!-- 
+<!--
 <div class="clock">
     <div id="day"></div>
     <div class="wrapper">
