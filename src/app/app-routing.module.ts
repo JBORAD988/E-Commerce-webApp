@@ -14,7 +14,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes = [
-  { path: '', component: ProductDetailsComponent },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   {path: 'forgotpass', component: ForgotpassComponent},
@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'wishlist', component: WishlistComponent },
   { path: 'account', component: AccountComponent },
   { path: 'cart/checkout', component: CheckoutComponent },
+  { path: 'product', component: ProductDetailsComponent },
 
 ];
 
