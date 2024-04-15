@@ -11,7 +11,8 @@ export class HomeComponent implements OnInit {
 
 
 
-  autoplaycard : string = '{"delay": 3000, "speed": 1000}'
+  autoplaycard : string = '{"delay": 3000, "speed": 1000}';
+  menuShow: boolean = false;
 
 
 
@@ -35,42 +36,6 @@ export class HomeComponent implements OnInit {
     })
 
 
-    // var time = document.getElementById("time");
-    // var day = document.getElementById("day");
-    // var midday = document.getElementById("midday");
-
-    // var clock = setInterval(
-    //   function calcTime() {
-    //     var date_now = new Date();
-    //     var hr: string | number  = date_now.getHours();
-    //     var min: string | number  = date_now.getMinutes();
-    //     var sec: string | number  = date_now.getSeconds();
-    //     var middayValue = "AM"
-    //     // var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-    //     // day!.textContent = days[date_now.getDay()];
-
-    //     middayValue = (hr >= 12) ? "PM" : "AM";
-
-    //     if (hr == 0) {
-    //       hr = 12;
-    //     }
-    //     else if (hr > 12) {
-    //       hr -= 12;
-    //     }
-
-    //     hr = (hr < 10) ? "0" + hr : hr;
-    //     min = (min < 10) ? "0" + min : min;
-    //     sec = (sec < 10) ? "0" + sec : sec;
-
-    //     time!.textContent = hr + ":" + min + ":" + sec;
-    //     midday!.textContent = middayValue;
-    //   },
-    //   1000
-    // );
-
-
-
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 6,
       spaceBetween: 87,
@@ -80,7 +45,6 @@ export class HomeComponent implements OnInit {
       },
       loop: true,
       grabCursor: true,
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-testmonials-next1',
         prevEl: '.swiper-button-testmonials-prev1',
@@ -97,7 +61,6 @@ export class HomeComponent implements OnInit {
       },
       loop: true,
       grabCursor: true,
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-testmonials-next',
         prevEl: '.swiper-button-testmonials-prev',
@@ -111,8 +74,6 @@ export class HomeComponent implements OnInit {
     const mcat = document.querySelector(".mcat") as HTMLElement;
     const wcat = document.querySelector(".wcat") as HTMLElement;
     const move = document.querySelector(".move") as HTMLElement;
-    // const btn = document.querySelector(".ctn-btn2") as HTMLElement;
-    // const btn2 = document.querySelector(".ctn-btn22") as HTMLElement;
 
     window.addEventListener("scroll", () => {
 
@@ -130,8 +91,6 @@ export class HomeComponent implements OnInit {
 
     icon.addEventListener("click", () => {
       mcat.style.display = 'block';
-      // btn2.style.display = 'block';
-      // btn.style.display = 'none';
     })
 
     document.addEventListener("click", (event) => {
@@ -139,8 +98,6 @@ export class HomeComponent implements OnInit {
       const isClickInside = mcat.contains(target) || icon.contains(target);
       if (!isClickInside) {
         mcat.style.display = 'none';
-        // btn2.style.display = 'none';
-        // btn.style.display = 'block';
       }
     });
 
@@ -148,9 +105,6 @@ export class HomeComponent implements OnInit {
     icon1.addEventListener("click", () => {
       wcat.style.display = 'block';
       console.log('j');
-
-      // btn2.style.display = 'block';
-      // btn.style.display = 'none';
     })
 
     document.addEventListener("click", (event) => {
@@ -158,11 +112,16 @@ export class HomeComponent implements OnInit {
       const isClickInside = wcat.contains(target) || icon1.contains(target);
       if (!isClickInside) {
         wcat.style.display = 'none';
-        // btn2.style.display = 'none';
-        // btn.style.display = 'block';
+        console.log("mituaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        
       }
     });
 
+  }
+
+
+  onMenu() {
+    this.menuShow = !this.menuShow;
   }
 
 // timer
@@ -189,7 +148,7 @@ s2:any
 
   timer1() {
     const currentDate = new Date();
-    const targetDate = new Date(2024, 3, 12, 3,4,45,43434);
+    const targetDate = new Date(2024, 3, 28, 3,4,45,43434);
     const timeDifference = targetDate.getTime() - currentDate.getTime();
 
     const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
@@ -206,7 +165,7 @@ s2:any
 
   timer2() {
     const currentDate = new Date();
-    const targetDate = new Date(2024, 3, 25, 3,4,45,43434);
+    const targetDate = new Date(2024, 3, 28, 3,4,45,43434);
     const timeDifference = targetDate.getTime() - currentDate.getTime();
 
     const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
@@ -219,6 +178,14 @@ s2:any
     this.m2 = remainingMinutes;
     this.d2 = remainingDays;
     this.h2 = remainingHours;
+  }
+
+
+  wcat(){
+    const wcat = document.querySelector(".wcat") as HTMLElement;
+    wcat.style.display = 'block';
+
+    console.log("catacombas")
   }
 
 
