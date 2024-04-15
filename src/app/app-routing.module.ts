@@ -12,21 +12,21 @@ import { ForgotpassComponent } from './components/forgotpass/forgotpass.componen
 import { AccountComponent } from './components/account/account.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { authGuard } from './guard/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent,  },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   {path: 'forgotpass', component: ForgotpassComponent},
-  { path: 'home', component: HomeComponent },
-  { path: 'cart', component: CartComponent },
+  { path: 'cart', component: CartComponent ,canActivate:[authGuard] },
   { path: 'error', component: ErrorComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'cart', component: CartComponent },
-  { path: 'about', component: AboutUsComponent },
-  { path: 'wishlist', component: WishlistComponent },
-  { path: 'account', component: AccountComponent },
-  { path: 'cart/checkout', component: CheckoutComponent },
+  { path: 'cart', component: CartComponent  ,canActivate:[authGuard]},
+  { path: 'about', component: AboutUsComponent  },
+  { path: 'wishlist', component: WishlistComponent ,canActivate:[authGuard] },
+  { path: 'account', component: AccountComponent ,canActivate:[authGuard] },
+  { path: 'cart/checkout', component: CheckoutComponent  ,canActivate:[authGuard]},
   { path: 'product', component: ProductDetailsComponent },
 
 ];

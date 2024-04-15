@@ -20,9 +20,14 @@
                     </span>
                 </div>
                 <div class="pb-2 pd-2-flex">
+                  <div class="redirect-signup ">
+                    <h3 class="login-note">Already have account? &nbsp;</h3> <h3 class="link" [routerLink]="['/','signup']">Sign up</h3>
+                  </div>
                     <div><button type="button" (click)="onSubmit()" class="btn btn-back-color btn-size color-red  w-100 font-weight-bold mt-2">Log In</button></div>
                     <div><a [routerLink]="['/','forgotpass']" class="color-red forgotpass">Forget Password?</a></div>
+
                 </div>
+
             </form>
 
         </div>
