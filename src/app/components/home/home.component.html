@@ -4,13 +4,19 @@
         <img src="./assets/move.png">
     </div>
 
+    <div class="cat-menu-btn"  (click)="onMenu()">
+        
+        <button style="border: none; background-color: #DB4444 ; color: white; border-radius: 5px; width: 130px ; margin-top: 10px;
+        margin-left: 20px; padding: 1%;">See Catagories</button>
+    </div>
+
     <div class="sec1 frow">
 
-        <div class="menu">
+        <div class="menu" *ngIf="menuShow">
             <div class="click1 frow">
-                <p class="click1">Woman's Fashion</p>
+                <p class="click1" (click)="wcat()">Woman's Fashion</p>
                 <img class="cat-btn" src="./assets/v2.png">
-                <div class="wcat">
+                <div class="wcat" >
                     <p>Jeans</p>
                     <p>Western Wear</p>
                     <p>Tops & Tees</p>
@@ -21,7 +27,6 @@
             </div>
             <div class="click frow">
                 <p class="click">Men's Fashion</p>
-                <!-- <img class="cat-btn2 click" src="./assets/v1.png"> -->
                 <img class="cat-btn2 click" src="./assets/v2.png">
                 <div class="mcat">
                     <p>Jeans & Trousers</p>
@@ -39,16 +44,49 @@
             <p>Baby's & Toy's</p>
             <p>Groceries & Pets</p>
             <p>Helath & Beauty</p>
-            <!-- <h1>'{{autoplaycard}}'</h1>
-            <h4> autoplay='{{autoplaycard}}'</h4> -->
+        </div>
+
+        <div class="menu menuo">
+            <div class="click1 frow">
+                <p class="click1">Woman's Fashion</p>
+                <img class="cat-btn" src="./assets/v2.png">
+                <div class="wcat">
+                    <p>Jeans</p>
+                    <p>Western Wear</p>
+                    <p>Tops & Tees</p>
+                    <p>Dresses & JumpSuit</p>
+                    <p>Shirts</p>
+                    <p>Sleep Wear</p>
+                </div>
+            </div>
+            <div class="click frow">
+                <p class="click">Men's Fashion</p>
+                <img class="cat-btn2 click" src="./assets/v2.png">
+                <div class="mcat">
+                    <p>Jeans & Trousers</p>
+                    <p>T-Shirt</p>
+                    <p>Formal Wear</p>
+                    <p>Sport Wear</p>
+                    <p>Casual & Formal Shoes</p>
+                    <p>SunGlasses & frames</p>
+                </div>
+            </div>
+            <p>Electronics</p>
+            <p>Home & Lifestyle</p>
+            <p>Medicine</p>
+            <p>Sport & Outdoor</p>
+            <p>Baby's & Toy's</p>
+            <p>Groceries & Pets</p>
+            <p>Helath & Beauty</p>
         </div>
 
         <hr>
 
         <div class="prod-swip">
 
-            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true"  [autoplay]='autoplaycard' >
-                <!-- autoplay='{"delay": 3000, "speed": 1000}' -->
+            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true"
+                autoplay='{"delay": 5000, "speed": 1000}'>
+                
 
                 <swiper-slide>
                     <div class="imgbtn">
@@ -612,13 +650,9 @@
 
         <div class="frow">
             <div class="block"></div>
-            <p class="categories" style="color: #DB4444;">This Month</p>
+            <p class="categories" style="color: #DB4444;">Our Products</p>
         </div>
-
-        <div class="title-btn frow space">
-            <p>Best Selling Product</p>
-        </div>
-
+        
         <div class="fcol">
 
             <div class="frow space">
@@ -905,44 +939,3 @@
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class="clock">
-    <div id="day"></div>
-    <div class="wrapper">
-        <div id="time"></div>
-        <div id="midday"></div>
-    </div>
-</div> -->
