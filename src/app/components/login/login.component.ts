@@ -84,6 +84,7 @@ export class LoginComponent implements OnInit {
       email: this.loginForm.value.username,
       password: this.loginForm.value.password
     }).subscribe(()=>{
+      this.fireauth.sendtoken()
 
     },error => {
       this.isLogginIn = false
