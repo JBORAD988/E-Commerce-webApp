@@ -97,8 +97,8 @@ export class HomeComponent implements OnInit {
       loop: true,
       grabCursor: true,
       navigation: {
-        nextEl: '.swiper-button-testmonials-next1',
-        prevEl: '.swiper-button-testmonials-prev1',
+        nextEl: '.swiper-button-testmonials-next',
+        prevEl: '.swiper-button-testmonials-prev',
       },
       breakpoints: {
         450: {
