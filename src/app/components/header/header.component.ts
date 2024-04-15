@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { style } from '@angular/animations';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit{
 
 
+  menuShow: boolean = false;
+  searchShow: boolean = false;
 
-  constructor(){
-
+  constructor(private router: Router) {
+    
   }
-
-
   ngOnInit(): void {
+    
+
     const icon = document.querySelector(".acc") as HTMLElement;
     const menu = document.querySelector(".acc-menu") as HTMLElement;
     
@@ -43,16 +47,12 @@ export class HeaderComponent implements OnInit{
       }
     });
 
-
   }
 
-  menuShow: boolean = false;
-  searchShow: boolean = false;
-  h1show: boolean = true;
-  h2show: boolean = false;
-
-  s1show: boolean = true;
-  s2show: boolean = false;
+  getCurrentRoutePath(): void {
+    const url = this.router.url
+    this.changedIcon(url)
+  }
 
   onToggle() {
     this.menuShow = !this.menuShow;    
@@ -62,19 +62,74 @@ export class HeaderComponent implements OnInit{
     this.searchShow = !this.searchShow
   }
 
-  onHeart() {
-    this.h1show = !this.h1show;
-    this.h2show = !this.h2show;
-    this.s2show = false;
-    this.s1show = true
+  changedIcon(urldata:string) {
+
+    const favIcon = document.querySelector('.fav-icon') as HTMLElement;
+
+    if (urldata == '/wishlist') {
+      favIcon.style.color = '#DB4444';
+    } else {
+      favIcon.style.color = 'black'
+    }
+
+    const cartIcon = document.querySelector('.cart-icon') as HTMLElement;
+
+    if (urldata == '/cart') {
+      cartIcon.style.color = '#DB4444';
+    } else {
+      cartIcon.style.color = 'black'
+    }
+
+    const userIcon = document.querySelector('.user-icon') as HTMLElement;
+
+    if (urldata == '/account') {
+      userIcon.style.color = '#DB4444';
+    } else {
+      userIcon.style.color = 'black'
+    }
+
+    const homeBtn = document.querySelector('.home-btn') as HTMLElement;
+
+    if (urldata == '/') {
+      homeBtn.style.color = '#DB4444';
+      homeBtn.style.fontWeight = '500'
+    } else {
+      homeBtn.style.color = 'black'
+      homeBtn.style.fontWeight = '400'
+    }
+
+    const conBtn = document.querySelector('.con-btn') as HTMLElement;
+
+    if (urldata == '/contact') {
+      conBtn.style.color = '#DB4444';
+      conBtn.style.fontWeight = '500'
+    } else {
+      conBtn.style.color = 'black'
+      conBtn.style.fontWeight = '400'
+    }
+
+    const abtBtn = document.querySelector('.abt-btn') as HTMLElement;
+
+    if (urldata == '/about') {
+      abtBtn.style.color = '#DB4444';
+      abtBtn.style.fontWeight = '500'
+    } else {
+      abtBtn.style.color = 'black'
+      abtBtn.style.fontWeight = '400'
+    }
+
+    const signBtn = document.querySelector('.sign-btn') as HTMLElement;
+
+    if (urldata == '/signup') {
+      signBtn.style.color = '#DB4444';
+      signBtn.style.fontWeight = '500'
+    } else {
+      signBtn.style.color = 'black'
+      signBtn.style.fontWeight = '400'
+    }
+
   }
 
-  onShop() {
-    this.s1show = !this.s1show;
-    this.s2show = !this.s2show;
-    this.h2show = false;
-    this.h1show = true;
-  }
 
 
 

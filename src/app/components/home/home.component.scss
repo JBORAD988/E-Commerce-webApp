@@ -2,6 +2,37 @@
 
   position: relative;
 
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .swiper-pagination {
+    width: 101rem;
+  }
+
+  .frow1,
+  .frowp {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pag-btn {
+    display: block;
+  }
+
+  .main-swip {
+    display: block;
+  }
+
+  .med-swip {
+    display: none;
+  }
+
   .cat-menu-btn {
     display: none;
   }
@@ -51,12 +82,14 @@
       bottom: 0;
       margin-bottom: 3rem;
       margin-left: 4.3rem;
+
       p {
         margin-top: 2px;
         margin-right: 3px;
         text-decoration: underline;
         color: white;
       }
+
       span {
         color: white;
       }
@@ -130,6 +163,8 @@
         width: 57rem;
         height: 20rem;
       }
+
+
     }
 
   }
@@ -141,7 +176,7 @@
 
 
     .button {
-      margin-left: 42rem;
+      margin-left: 45rem;
       margin-top: 1.5rem;
       margin-bottom: 2rem;
       height: 2.6rem;
@@ -257,8 +292,9 @@
     padding-bottom: 2rem;
     height: 120px;
 
-    p {
-      font-size: 27px;
+    .flash {
+      font-size: 28px;
+      padding-top: 5%;
       font-weight: 500;
     }
 
@@ -324,7 +360,7 @@
 
 
 
-  .round-timer{
+  .round-timer {
     position: absolute;
     bottom: 0;
     width: 20px;
@@ -332,21 +368,21 @@
     margin-left: 5rem;
 
 
-    .inner-clock-1{
+    .inner-clock-1 {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 280px;
 
 
-      .clock-style-1{
+      .clock-style-1 {
 
-        .c-up{
+        .c-up {
           font-weight: bold;
           font-size: 14px;
         }
 
-        .c-down{
+        .c-down {
           font-weight: 400;
           font-size: 11px;
         }
@@ -373,7 +409,7 @@
 
 
 
-  .inner-dflex-clock1{
+  .inner-dflex-clock1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -381,20 +417,18 @@
 
     .clock-style-2 {
 
-      .c-up1{
+      .c-up1 {
         font-size: 14px;
-
-
       }
 
-      .c-down1{
+      .c-down1 {
         font-size: 30px;
         margin-top: 0.5rem;
         font-weight: 900;
 
       }
 
-      img{
+      img {
         margin-top: 230%;
         height: 20px;
         width: auto;
@@ -553,8 +587,38 @@
 
   .home-div {
 
+    .downcard {
+      display: none;
+    }
+
+    .frow1,
+    .frowp {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .swiper-wrapper {
+      margin-bottom: 2rem;
+    }
+
+    .swiper-pagination {
+      width: 20rem;
+    }
+
+    .pag-btn {
+      display: none;
+    }
+
+    .main-swip {
+      display: none !important;
+    }
+
+    .med-swip {
+      display: block;
+    }
+
     .cat-menu-btn {
-      display: block  ;
+      display: block;
     }
 
     .menubtn {
@@ -563,9 +627,9 @@
 
     .sec1 {
 
-  
 
-      .menu{
+
+      .menu {
         z-index: 9;
         background-color: white;
         position: absolute;
@@ -581,7 +645,8 @@
         margin-bottom: 5px;
       }
 
-      .cat-btn, .cat-btn2 {
+      .cat-btn,
+      .cat-btn2 {
         height: 0.5rem;
         width: 0.8rem;
       }
@@ -595,7 +660,7 @@
       }
 
       hr {
-       display: none;
+        display: none;
       }
 
       .prod-swip {
@@ -607,6 +672,7 @@
           height: 10rem;
           width: 21rem;
         }
+
       }
 
       .shop {
@@ -616,7 +682,257 @@
 
     }
 
-  }
-  
-}
+    .sec2 {
+      padding: 2rem 0 0 1rem;
 
+      .image {
+        height: 9rem;
+        width: 10rem;
+      }
+
+      .button {
+        margin-left: 4.7rem;
+        margin-top: 0rem;
+      }
+    }
+
+    .discount {
+      padding: 0 0 0 0.5rem;
+      margin-top: 0.5rem;
+      height: 1.2rem;
+      width: 2.4rem;
+      font-size: 11px;
+      margin-left: 10px;
+    }
+
+    .delete {
+      margin-top: 0.3rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      padding: 2px 0 0 2px;
+      top: 0;
+      right: 0;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .categories {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 6px;
+      margin-left: 5px;
+    }
+
+    .prod-name {
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 12px;
+    }
+
+    .title-btn {
+
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      height: 120px;
+
+      .flash {
+        font-size: 20px;
+        padding-top: 0;
+        font-weight: 500;
+      }
+
+      img {
+        cursor: pointer;
+        margin-right: 7px;
+      }
+    }
+
+    .inner-dflex-clock1 {
+
+      .clock-style-2 {
+
+        .c-up1 {
+          font-size: 10px;
+        }
+
+        .c-down1 {
+          font-size: 20px;
+          margin-top: 0.1rem;
+
+        }
+
+        img {
+          margin-top: 220%;
+          height: 15px;
+        }
+      }
+
+    }
+
+    .cart-btn {
+      display: block;
+      width: 10rem;
+    }
+
+    .sec3 {
+      padding: 1rem 0 0 1rem;
+
+      .cato {
+        height: 50px !important;
+      }
+
+    }
+
+    .sec4 {
+      padding: 1rem 0 0 1rem;
+
+      .all {
+        height: 2rem;
+        width: 6rem;
+        margin-right: 0.5rem;
+      }
+
+      .image {
+        height: 9rem;
+        width: 10rem;
+      }
+
+    }
+
+    .sec5 {
+      padding: 1rem 0 0 1rem;
+      margin-bottom: 5rem;
+
+      img {
+        height: 11rem;
+        width: 21rem;
+      }
+
+      .buybtn {
+        margin-bottom: 5px;
+        margin-left: 1.5rem;
+
+        button {
+          height: 1.5rem;
+          width: 4.7rem;
+          color: black;
+          background-color: #00FF66;
+        }
+      }
+
+    }
+
+    .round-timer {
+      width: 15px;
+      margin-bottom: 2.2rem;
+      margin-left: 1rem;
+
+
+      .inner-clock-1 {
+        width: 200px;
+
+
+        .clock-style-1 {
+
+          .c-up {
+            font-size: 12px;
+          }
+
+          .c-down {
+            font-size: 10px;
+          }
+
+        }
+
+      }
+
+      .round {
+        height: 2.6rem;
+        width: 2.6rem;
+      }
+
+    }
+
+    .sec6 {
+      padding: 1rem 0 0 1rem;
+
+      .image {
+        height: 9rem;
+        width: 10rem;
+      }
+
+      .view {
+        margin: 1rem 0 1rem 5.5rem;
+        height: 2.5rem;
+        width: 10rem;
+      }
+    }
+
+    .sec7 {
+      padding: 1rem 0 0 1rem;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .img-sec {
+        margin: 0rem 0 1rem 0;
+      }
+
+      .mb {
+        margin-bottom: 0;
+      }
+
+      .image {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+
+      .img1 {
+        height: 15rem;
+        width: 21.5rem;
+        margin-left: 0;
+      }
+
+      .img2 {
+        height: 15rem;
+        width: 21.5rem;
+      }
+
+      .img3 {
+        height: 10.1rem;
+      }
+
+    }
+
+    .service {
+      margin: 2rem 0 0 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .ser1 {
+      margin-right: 0;
+      margin-bottom: 0;
+
+      .des {
+        font-size: 10px;
+      }
+    }
+
+    .ex {
+      font-size: 9px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      margin-top: 15px;
+    }
+
+    .serimg {
+      height: 3rem;
+      width: 3rem;
+    }
+
+  }
+}
