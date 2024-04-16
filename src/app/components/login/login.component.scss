@@ -104,6 +104,27 @@
      }
   }
 
+  .pswd {
+    position: relative;
+    display: inline-block;
+  }
+
+  .pswd:focus + span  {
+    display: block;
+  }
+
+  span:hover {
+    display: block;
+  }
+
+  span {
+    display: none;  
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
 
   .redirect-signup{
     display: none !important;
