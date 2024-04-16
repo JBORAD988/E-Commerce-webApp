@@ -1,6 +1,7 @@
 import { style } from '@angular/animations';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'app-header',
@@ -13,14 +14,14 @@ export class HeaderComponent implements OnInit{
   menuShow: boolean = false;
   searchShow: boolean = false;
 
-  constructor(private router: Router) {
-    
-  }
+  constructor(private router: Router, private authentication: AuthenticationService) {}
   ngOnInit(): void {
     
 
     const icon = document.querySelector(".acc") as HTMLElement;
     const menu = document.querySelector(".acc-menu") as HTMLElement;
+
+ 
     
 
     icon.addEventListener("click", () => {
@@ -47,6 +48,18 @@ export class HeaderComponent implements OnInit{
       }
     });
 
+  }
+
+
+  hidebutton(){
+    const sign = document.querySelector(".sign") as HTMLElement;
+
+    if(this.authentication.IsLoggedIn) {
+      sign.style.display = 'none';
+    }
+    else{
+      sign.style.display = 'block';
+    }
   }
 
   getCurrentRoutePath(): void {
@@ -128,6 +141,11 @@ export class HeaderComponent implements OnInit{
       signBtn.style.fontWeight = '400'
     }
 
+  }
+
+  logOut() {
+    this.router.navigate(['/login']);
+    localStorage.removeItem('token');
   }
 
 
