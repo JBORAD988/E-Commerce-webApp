@@ -11,7 +11,7 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 })
 export class ForgotpassComponent implements OnInit{
   isLogginIn: boolean = false;
-  isRecoveringpassword = false;
+  isRecoveringpassword: boolean = false;
 
   ForgotForm!: FormGroup;
 
