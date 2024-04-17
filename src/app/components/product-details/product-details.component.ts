@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
+  quantity: number = 1;
+
   ngOnInit(): void {
 
     const gray = document.querySelector('.gray') as HTMLElement;
@@ -22,6 +24,18 @@ export class ProductDetailsComponent implements OnInit {
       gray.style.border = "none"
     });
 
+  }
+
+
+  max() {
+    this.quantity += 1;
+  }
+
+  min() {
+    this.quantity -= 1;
+    if(this.quantity <= 0) {
+      this.quantity = 0;
+    }
   }
 
 }

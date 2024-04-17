@@ -1,6 +1,7 @@
 import { style } from '@angular/animations';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit{
   menuShow: boolean = false;
   searchShow: boolean = false;
 
-  constructor(private router: Router, private authentication: AuthenticationService) {}
+   
+  constructor(private router: Router, private authentication: AuthenticationService,  private toastr:ToastrService) {}
   ngOnInit(): void {
     
 
@@ -146,6 +148,7 @@ export class HeaderComponent implements OnInit{
   logOut() {
     this.router.navigate(['/login']);
     localStorage.removeItem('token');
+    this.toastr.success('Logged Out Successfully! ');
   }
 
 

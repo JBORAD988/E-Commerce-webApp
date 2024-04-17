@@ -46,9 +46,9 @@
             <div class="btns frowf">
 
                 <div class="valuebtn frowf">
-                    <div class="min">-</div>
-                    <div class="value">1</div>
-                    <div class="max">+</div>
+                    <div class="min" (click)="min()">-</div>
+                    <div class="value">{{quantity}}</div>
+                    <div class="max" (click)="max()">+</div>
                 </div>
 
                 <button class="butbtn">Buy Now</button>

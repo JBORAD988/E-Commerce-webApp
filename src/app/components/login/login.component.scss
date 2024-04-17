@@ -1,107 +1,110 @@
-  .container{
+  .container {
     margin-left: 0;
     max-width: 100rem
   }
 
 
 
-  .form-style input{
-    border:0;
-    height:50px;
-    border-radius:0;
-  border-bottom:1px solid #ebebeb;
+  .form-style input {
+    border: 0;
+    height: 50px;
+    border-radius: 0;
+    border-bottom: 1px solid #ebebeb;
   }
-  .form-style input:focus{
-  border-bottom:1px solid #007bff;
-  box-shadow:none;
-  outline:0;
-  background-color:#ebebeb;
 
-  span{
-    background-color:#ebebeb;
+  .form-style input:focus {
+    border-bottom: 1px solid #007bff;
+    box-shadow: none;
+    outline: 0;
+    background-color: #ebebeb;
 
-  }
+    span {
+      background-color: #ebebeb;
+
+    }
 
   }
 
 
 
   .sideline {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    color:#ccc;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ccc;
   }
-  button{
-  height:50px;
+
+  button {
+    height: 50px;
   }
+
   .sideline:before,
   .sideline:after {
-      content: '';
-      border-top: 1px solid #ebebeb;
-      margin: 0 20px 0 0;
-      flex: 1 0 20px;
+    content: '';
+    border-top: 1px solid #ebebeb;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
   }
 
   .sideline:after {
-      margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
   }
 
 
-  .pd-2-flex{
+  .pd-2-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .color-red{
+  .color-red {
     color: #DB4444;
   }
 
-  .btn-back-color{
+  .btn-back-color {
     background-color: #DB4444;
     color: white;
   }
 
-  .btn-size{
+  .btn-size {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .img-fluid{
+  .img-fluid {
 
     max-width: 700px;
     max-height: auto;
 
   }
 
-  .forgotpass{
+  .forgotpass {
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
   }
 
-  .logincard-marg{
+  .logincard-marg {
     margin-top: 90px;
 
-    h3{
+    h3 {
       font-size: 2.5rem;
     }
 
-    h6{
+    h6 {
       font-size: 1rem;
       font-weight: 500;
     }
 
   }
 
-  .form-css{
-     input{
-    padding-left: 0;
-     }
+  .form-css {
+    input {
+      padding-left: 0;
+    }
   }
 
   .pswd {
@@ -109,7 +112,7 @@
     display: inline-block;
   }
 
-  .pswd:focus + span  {
+  .pswd:focus+span {
     display: block;
   }
 
@@ -118,26 +121,26 @@
   }
 
   span {
-    display: none;  
+    display: none;
     position: absolute;
-    right: 20%;
+    right: 21.2%;
     cursor: pointer;
     font-size: 20px;
   }
 
 
-  .redirect-signup{
+  .redirect-signup {
     display: none !important;
 
 
     margin-top: 4%;
 
-    .login-note{
+    .login-note {
       color: #5e5e5e;
 
     }
 
-    .link{
+    .link {
       color: black;
       text-decoration: none;
       border-bottom: 1px solid #5e5e5e;
@@ -146,60 +149,67 @@
 
     }
 
-    .link:hover{
+    .link:hover {
       color: #DB4444;
       text-decoration: none;
       border-bottom: 3px solid #DB4444;
       transition: ease-in-out;
-
-
     }
 
   }
+
+  .is-invalid {
+    border-bottom-color: red !important;
+  }
+
+  .invalid-feedback {
+  color: red;
+  font-size: 0.9em;
+}
 
 
 
   @media screen and (max-width:375px) {
 
-    .container{
+    .container {
       margin-bottom: 4rem;
-    margin-top: 3rem;
+      margin-top: 3rem;
     }
 
-    .logincard-marg{
+    .logincard-marg {
       margin-top: 5px;
 
-      h3{
+      h3 {
         font-size: 1.5rem;
       }
 
-      h6{
+      h6 {
         font-size: .9rem;
         font-weight: 500;
       }
 
     }
 
-    .btn-size{
+    .btn-size {
       padding-left: 110px;
       padding-right: 110px;
 
     }
 
-    .pd-2-flex{
-display: flex;
-flex-direction: column-reverse;
+    .pd-2-flex {
+      display: flex;
+      flex-direction: column-reverse;
 
     }
 
-    .forgotpass{
+    .forgotpass {
       padding-left: 140px;
     }
 
 
-  .redirect-signup{
-    display: flex !important;
-  }
+    .redirect-signup {
+      display: flex !important;
+    }
 
 
 

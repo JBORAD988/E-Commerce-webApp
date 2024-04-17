@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
 import { AuthenticationService } from 'src/app/services/authentication.service';
@@ -28,9 +28,9 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     this.signUpForm = this.fb.group({
-      firstName: [''],
-      userName: [''],
-      password: ['',],
+      firstName: ['', Validators.required],
+      userName: ['', Validators.required  ],
+      password: ['', Validators.required],
     })
 
   }

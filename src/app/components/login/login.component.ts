@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
-import Validateform from 'src/app/helpers/validateform';
 import { AuthService } from 'src/app/services/auth.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UserStoreService } from 'src/app/services/user-store.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -27,15 +27,14 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder, 
-    private auth: AuthService, 
     private fireauth: AuthenticationService, 
-    private userStore: UserStoreService, 
     private route: Router, 
-    private toast: NgToastService) {}
+    private toastr:ToastrService
+  ) {}
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      username: ['', Validators.required],
+      username: ['', Validators.required, Validators.email],
       password: ['', Validators.required]
     })
 
@@ -89,14 +88,16 @@ export class LoginComponent implements OnInit {
       password: this.loginForm.value.password
     }).subscribe(() => {
       this.fireauth.sendtoken()
-      this.route.navigate(['/', '/'])
+      this.toastr.success('Logged In Successfully! ');
+      this.route.navigate(['/', '/']);
+
     }, error => {
       this.isLogginIn = false
       this.route.navigate(['login']);
     })
     console.log('register')
     console.log(this.loginForm.value)
-    this.toast.success({ detail: "Login", summary: "Login successful", duration: 5000 });
+
   }
 
 
