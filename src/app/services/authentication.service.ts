@@ -3,6 +3,7 @@ import {from, Observable, of} from "rxjs";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import {Router} from "@angular/router";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
+import { NgToastService } from 'ng-angular-popup';
 // import Swal from 'sweetalert2'
 
 
@@ -13,14 +14,13 @@ import {AngularFirestore} from "@angular/fire/compat/firestore";
 export class AuthenticationService {
 
 
-  constructor(private authfire: AngularFireAuth , private route: Router, private firestore: AngularFirestore) { }
+  constructor(private authfire: AngularFireAuth , private route: Router, private firestore: AngularFirestore, private toast: NgToastService) { }
 
 
   signIn(params:SignIn): Observable<any> {
     return from(this.authfire.signInWithEmailAndPassword(
       params.email , params.password
     ))
-
   }
 
   signUp(user:SignUp): Observable<any>{
