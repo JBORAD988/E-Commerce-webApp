@@ -6,6 +6,7 @@ import { AuthService } from 'src/app/services/auth.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UserStoreService } from 'src/app/services/user-store.service';
 import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-login',
@@ -29,10 +30,12 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder, 
     private fireauth: AuthenticationService, 
     private route: Router, 
-    private toastr:ToastrService
+    private toastr:ToastrService,
+    private spinner: NgxSpinnerService
   ) {}
 
   ngOnInit(): void {
+    
     this.loginForm = this.fb.group({
       username: ['', Validators.required, Validators.email],
       password: ['', Validators.required]
@@ -82,6 +85,7 @@ export class LoginComponent implements OnInit {
 
 
   onSubmit() {
+   
     this.isLogginIn = true
     this.fireauth.signIn({
       email: this.loginForm.value.username,
@@ -89,8 +93,7 @@ export class LoginComponent implements OnInit {
     }).subscribe(() => {
       this.fireauth.sendtoken()
       this.toastr.success('Logged In Successfully! ');
-      this.route.navigate(['/', '/']);
-
+      this.route.navigate(['/']);
     }, error => {
       this.isLogginIn = false
       this.route.navigate(['login']);
