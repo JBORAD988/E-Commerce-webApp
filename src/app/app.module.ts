@@ -28,6 +28,7 @@ import { AccountComponent } from './components/account/account.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -60,8 +61,9 @@ import { ToastrModule } from 'ngx-toastr';
     MatCardModule,
     AngularFireModule.initializeApp(AuthApi.firebaseConfig),
     AngularFireAuthModule,
-    BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(), // ToastrModule added
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(), 
+    NgxSpinnerModule.forRoot({ type: 'line-scale-pulse-out' })
   ],
 
   providers: [],
