@@ -1,6 +1,7 @@
 import { style } from '@angular/animations';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgxSpinner, NgxSpinnerService, Spinner } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
@@ -16,7 +17,7 @@ export class HeaderComponent implements OnInit{
   searchShow: boolean = false;
 
    
-  constructor(private router: Router, private authentication: AuthenticationService,  private toastr:ToastrService) {}
+  constructor(private router: Router, private authentication: AuthenticationService,  private toastr:ToastrService,  private spinner: NgxSpinnerService) {}
   ngOnInit(): void {
     
 
@@ -146,9 +147,13 @@ export class HeaderComponent implements OnInit{
   }
 
   logOut() {
+    this.spinner.show()
     this.router.navigate(['/login']);
     localStorage.removeItem('token');
-    this.toastr.success('Logged Out Successfully! ');
+    this.toastr.success('Logged Out Successfully! ')
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 1000);
   }
 
 

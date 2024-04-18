@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
-import {from, Observable, of} from "rxjs";
-import {AngularFireAuth} from "@angular/fire/compat/auth";
-import {Router} from "@angular/router";
-import {AngularFirestore} from "@angular/fire/compat/firestore";
+import { from, Observable, of } from "rxjs";
+import { AngularFireAuth } from "@angular/fire/compat/auth";
+import { Router } from "@angular/router";
+import { AngularFirestore } from "@angular/fire/compat/firestore";
 import { NgToastService } from 'ng-angular-popup';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { tap } from 'rxjs/operators';
 // import Swal from 'sweetalert2'
 
 
@@ -14,18 +16,31 @@ import { NgToastService } from 'ng-angular-popup';
 export class AuthenticationService {
 
 
-  constructor(private authfire: AngularFireAuth , private route: Router, private firestore: AngularFirestore, private toast: NgToastService) { }
+  constructor(private authfire: AngularFireAuth, private route: Router, private firestore: AngularFirestore, private spinner: NgxSpinnerService) { }
 
 
-  signIn(params:SignIn): Observable<any> {
+  signIn(params: SignIn): Observable<any> {
+     this.spinner.show();
     return from(this.authfire.signInWithEmailAndPassword(
-      params.email , params.password
-    ))
-  }
+      params.email, params.password
+    )).pipe(
+      tap(()=>{
+        setTimeout(()=>{
+          this.spinner.hide();
+        },2000)
+      })
+    )
+    }
 
-  signUp(user:SignUp): Observable<any>{
-
-    return from(this.authfire.createUserWithEmailAndPassword(user.Email , user.password))
+  signUp(user:SignUp): Observable <any>{
+    this.spinner.show();
+return from(this.authfire.createUserWithEmailAndPassword(user.Email, user.password)).pipe(
+  tap(() => {
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 2000);
+  })
+);
   }
 
 
@@ -39,15 +54,20 @@ export class AuthenticationService {
     localStorage.setItem("token", token)
 
   }
-  setemailtoken(email:any){
+  setemailtoken(email: any) {
     localStorage.setItem("id", email)
   }
 
-  signout(){
+  signout() {
     // localStorage.clear();
+    // this.spinner.show();
+    // setTimeout(() => {
+    //   this.spinner.hide();
+    // }, 1000);
     localStorage.removeItem('token')
     localStorage.removeItem('id')
-    this.route.navigate(['newlogin'])
+    this.route.navigate(['login'])
+    
 
   }
 
@@ -56,29 +76,13 @@ export class AuthenticationService {
   }
 
 
-
-  // chnagepass(params:SignIn): Observable<any> {
-  //   return from(this.authfire.signInWithEmailAndPassword(
-  //     params.email , params.password
-  //   ).then(function (UserCredential){
-  //     this.userCredential.user.updateEmail('newyou@domain.example')
-  //   }))
-  //
-  // }
-
-
-
-
-
-
-  // }signIn( email:string, password: string){
-  //
-  // }
-
-
-  recoverpass(email: string):Observable<void>{
-
-    return from(this.authfire.sendPasswordResetEmail(email))
+  recoverpass(email: string): Observable<void> {
+    this.spinner.show();
+    return from(this.authfire.sendPasswordResetEmail(email)).pipe(tap(()=>{
+      setTimeout(()=>{
+        this.spinner.hide();
+      },2000)
+    }))
   }
 
   // signInWithGoogle(){
@@ -90,16 +94,16 @@ export class AuthenticationService {
       .signInWithPopup(provider)
       .then((result) => {
         console.log('You have been successfully logged in!', result.user);
-        return result.user; // Return the user object
+        return result.user; 
       })
       .catch((error) => {
         console.log(error);
-        throw error; // Throw error for handling in the component
+        throw error; 
       });
   }
 
-  get IsLoggedIn(){
-    if (localStorage.getItem("token")){
+  get IsLoggedIn() {
+    if (localStorage.getItem("token")) {
       return true;
     }
     return false;
@@ -108,9 +112,9 @@ export class AuthenticationService {
 
 }
 
-type SignIn={
-  email:string; password: string;
+type SignIn = {
+  email: string; password: string;
 }
-type SignUp={
-  Email:string; password: string;
+type SignUp = {
+  Email: string; password: string;
 }
