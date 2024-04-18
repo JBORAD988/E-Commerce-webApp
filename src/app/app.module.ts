@@ -27,6 +27,7 @@ import { ForgotpassComponent } from './components/forgotpass/forgotpass.componen
 import { AccountComponent } from './components/account/account.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -59,8 +60,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     MatCardModule,
     AngularFireModule.initializeApp(AuthApi.firebaseConfig),
     AngularFireAuthModule,
-
-
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
   ],
 
   providers: [],

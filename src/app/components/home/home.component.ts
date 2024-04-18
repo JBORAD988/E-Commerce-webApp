@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
 
 
 
-  autoplaycard : string = '{"delay": 3000, "speed": 1000}';
+  autoplaycard: string = '{"delay": 3000, "speed": 1000}';
   menuShow: boolean = false;
 
 
@@ -25,20 +26,43 @@ export class HomeComponent implements OnInit {
 
 
 
-    autoplay.addEventListener("mouseover",()=>{
-    this.autoplaycard = "false"
+    autoplay.addEventListener("mouseover", () => {
+      this.autoplaycard = "false"
 
     })
 
-    autoplay.addEventListener("mouseleave",()=>{
+    autoplay.addEventListener("mouseleave", () => {
       this.autoplaycard = '{"delay": 3000, "speed": 1000}'
 
     })
 
+    //   var swiper = new Swiper(".swiper-container", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 87,
+    //     width: 50,
+    //     effect: 'cube',
+    //     cubeEffect: {
+    //         shadow: true,
+    //         slideShadows: true,
+    //         shadowOffset: 20,
+    //         shadowScale: 0.94,
+    //     },
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         type: 'bullets',
+    //         clickable: true,
+    //     },
+    //     loop: true,
+    //     grabCursor: true,
+    // });
 
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 6,
-      spaceBetween: 87,
+
+
+
+
+    var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 2,
+      spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -49,12 +73,23 @@ export class HomeComponent implements OnInit {
         nextEl: '.swiper-button-testmonials-next1',
         prevEl: '.swiper-button-testmonials-prev1',
       },
-
+      breakpoints: {
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 87,
+        }
+      },
+      centeredSlides: false,
+      modules: [Navigation]
     });
 
-    var swiper = new Swiper(".mySwiper1", {
-      slidesPerView: 4,
-      spaceBetween: 87,
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -65,6 +100,18 @@ export class HomeComponent implements OnInit {
         nextEl: '.swiper-button-testmonials-next',
         prevEl: '.swiper-button-testmonials-prev',
       },
+      breakpoints: {
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        1920: {
+          slidesPerView: 6,
+          spaceBetween: 87,
+        }
+      },
+      centeredSlides: false,
+      modules: [Navigation]
 
     });
 
@@ -113,7 +160,7 @@ export class HomeComponent implements OnInit {
       if (!isClickInside) {
         wcat.style.display = 'none';
         console.log("mituaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        
+
       }
     });
 
@@ -124,18 +171,18 @@ export class HomeComponent implements OnInit {
     this.menuShow = !this.menuShow;
   }
 
-// timer
+  // timer
 
 
-d1: any
-m1: any
-h1:any
-s1:any
+  d1: any
+  m1: any
+  h1: any
+  s1: any
 
-d2: any
-m2: any
-h2:any
-s2:any
+  d2: any
+  m2: any
+  h2: any
+  s2: any
 
   constructor() {
     this.timer1();
@@ -148,7 +195,7 @@ s2:any
 
   timer1() {
     const currentDate = new Date();
-    const targetDate = new Date(2024, 3, 28, 3,4,45,43434);
+    const targetDate = new Date(2024, 3, 28, 3, 4, 45, 43434);
     const timeDifference = targetDate.getTime() - currentDate.getTime();
 
     const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
@@ -165,7 +212,7 @@ s2:any
 
   timer2() {
     const currentDate = new Date();
-    const targetDate = new Date(2024, 3, 28, 3,4,45,43434);
+    const targetDate = new Date(2024, 3, 28, 3, 4, 45, 43434);
     const timeDifference = targetDate.getTime() - currentDate.getTime();
 
     const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
@@ -181,7 +228,7 @@ s2:any
   }
 
 
-  wcat(){
+  wcat() {
     const wcat = document.querySelector(".wcat") as HTMLElement;
     wcat.style.display = 'block';
 

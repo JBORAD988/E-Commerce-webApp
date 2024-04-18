@@ -5,7 +5,7 @@
     </div>
 
     <div class="cat-menu-btn"  (click)="onMenu()">
-
+        
         <button style="border: none; background-color: #DB4444 ; color: white; border-radius: 5px; width: 130px ; margin-top: 10px;
         margin-left: 20px; padding: 1%;">See Catagories</button>
     </div>
@@ -16,7 +16,7 @@
             <div class="click1 frow">
                 <p class="click1" (click)="wcat()">Woman's Fashion</p>
                 <img class="cat-btn" src="./assets/v2.png">
-                <div class="wcat" >
+                <div class="wcat">
                     <p>Jeans</p>
                     <p>Western Wear</p>
                     <p>Tops & Tees</p>
@@ -82,7 +82,7 @@
 
         <hr>
 
-        <div class="prod-swip">
+        <div class="prod-swip main-swip">
 
             <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true"
                 autoplay='{"delay": 5000, "speed": 1000}'>
@@ -133,6 +133,65 @@
                     </div>
                 </swiper-slide>
 
+                <!-- <div class="swiper-pagination"></div> -->
+
+            </swiper-container>
+
+        </div>
+
+        <div class="prod-swip med-swip">
+
+            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 21rem" loop="true"
+                autoplay='{"delay": 5000, "speed": 1000}'>
+
+
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p1.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p2.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p1.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p2.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+                <div class="swiper-pagination"></div>
+
             </swiper-container>
 
         </div>
@@ -149,38 +208,50 @@
 
 
         <div class="title-btn frow space">
-            <div class="d-flex flex-row justify-content-between" style="width: 550px;">
-              <p style="padding-top: 5%;">Flash Sales</p>
-            <div class="inner-dflex-clock1">
-              <div class="clock-style-2 ">
-                <div class="round"> <div class="c-up1">Days</div><div class="c-down1">{{d2}}</div></div>
-              </div>
-              <div class="clock-style-2 ">
-                <div class="round"><img src="../../../assets/Semiclone.svg"></div>
-              </div>
-              <div class="clock-style-2 ">
-                <div class="round"><div class="c-up1">Hours</div><div class="c-down1">{{h2}}</div> </div>
-              </div>
-              <div class="clock-style-2 ">
-                <div class="round"><img src="../../../assets/Semiclone.svg"></div>
-              </div>
-              <div class="clock-style-2 ">
-                <div class="round"><div class="c-up1">Minutes</div><div class="c-down1">{{m2}}</div> </div>
-              </div>
-              <div class="clock-style-2 ">
-                <div class="round"><img src="../../../assets/Semiclone.svg"></div>
-              </div>
-              <div class="clock-style-2 ">
-                <div class="round"><div class="c-up1">Seconds</div><div class="c-down1">{{s2}}</div> </div>
-              </div>
+            <div class="frow1 justify-content-between" style="width: 550px;">
+                <p class="flash">Flash Sales</p>
+                <div class="inner-dflex-clock1">
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Days</div>
+                            <div class="c-down1">{{d2}}</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Hours</div>
+                            <div class="c-down1">{{h2}}</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Minutes</div>
+                            <div class="c-down1">{{m2}}</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Seconds</div>
+                            <div class="c-down1">{{s2}}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
 
 
 
-            <div>
-                <img class="swiper-button-testmonials-next" src="./assets/leftArrow.png">
-                <img class="swiper-button-testmonials-prev" src="./assets/rightArrow.png">
+            <div class="pag-btn">
+                <img class="swiper-button-testmonials-next1" src="./assets/leftArrow.png">
+                <img class="swiper-button-testmonials-prev1" src="./assets/rightArrow.png">
             </div>
         </div>
 
@@ -389,9 +460,11 @@
                         <p>(65)</p>
                     </div>
                 </div>
-
+                
             </div>
-
+            
+            <div class="swiper-pagination"></div>                
+            
         </div>
 
         <button class="button">View All Product</button>
@@ -408,11 +481,11 @@
             <p class="categories" style="color: #DB4444;">Categories</p>
         </div>
 
-        <div class="title-btn frow space">
-            <p>Browse By Categories</p>
-            <div>
-                <img class="swiper-button-testmonials-next1" src="./assets/leftArrow.png">
-                <img class="swiper-button-testmonials-prev1" src="./assets/rightArrow.png">
+        <div class="title-btn1 cato frow space">
+            <p class="bro">Browse By Categories</p>
+            <div class="pag-btn">
+                <img class="swiper-button-testmonials-next" src="./assets/leftArrow.png">
+                <img class="swiper-button-testmonials-prev" src="./assets/rightArrow.png">
             </div>
         </div>
 
@@ -479,6 +552,8 @@
 
             </div>
 
+            <div class="swiper-pagination"></div>
+
         </div>
 
         <hr>
@@ -494,126 +569,126 @@
             <p class="categories" style="color: #DB4444;">This Month</p>
         </div>
 
-        <div class="title-btn frow space">
-            <p>Best Selling Product</p>
+        <div class="title-btn1 frow space">
+            <p class="bro">Best Selling Product</p>
             <button class="all">View All</button>
         </div>
 
-        <div class="frow space">
+            <div class="frow space wrap">
 
-            <div>
-                <div class="image-container">
-                    <img class="image" src="./assets/cart8.png">
-                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
-                    <div class="fcol">
-                        <div class="delete heart">
-                            <span class="material-symbols-outlined">
-                                favorite
-                            </span>
-                        </div>
-                        <div class="delete">
-                            <span class="material-symbols-outlined">
-                                delete
-                            </span>
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart8.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <p class="prod-name">Quilted Satin Jacket</p>
-                <div class="price frow">
-                    <p style="color: #DB4444;">$750</p>
-                    <p class="disc">$950</p>
-                </div>
-                <div class="frow">
-                    <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
-                    <p>(65)</p>
-                </div>
-            </div>
-
-            <div>
-                <div class="image-container">
-                    <img class="image" src="./assets/cart7.png">
-                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
-                    <div class="fcol">
-                        <div class="delete heart">
-                            <span class="material-symbols-outlined">
-                                favorite
-                            </span>
-                        </div>
-                        <div class="delete">
-                            <span class="material-symbols-outlined">
-                                delete
-                            </span>
-                        </div>
+                    <p class="prod-name">Quilted Satin Jacket</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$950</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
                     </div>
                 </div>
-                <p class="prod-name">GP11 Shooter USB Gamgepade</p>
-                <div class="price frow">
-                    <p style="color: #DB4444;">$550</p>
-                    <p class="disc">$650</p>
-                </div>
-                <div class="frow">
-                    <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
-                    <p>(65)</p>
-                </div>
-            </div>
 
-            <div>
-                <div class="image-container">
-                    <img class="image" src="./assets/cart6.png">
-                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
-                    <div class="fcol">
-                        <div class="delete heart">
-                            <span class="material-symbols-outlined">
-                                favorite
-                            </span>
-                        </div>
-                        <div class="delete">
-                            <span class="material-symbols-outlined">
-                                delete
-                            </span>
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart7.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <p class="prod-name">RGB liquid CPU Cooler</p>
-                <div class="price frow">
-                    <p style="color: #DB4444;">$1960</p>
-                    <p class="disc">$2160</p>
-                </div>
-                <div class="frow">
-                    <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
-                    <p>(65)</p>
-                </div>
-            </div>
-
-            <div>
-                <div class="image-container">
-                    <img class="image" src="./assets/cart5.png">
-                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
-                    <div class="fcol">
-                        <div class="delete heart">
-                            <span class="material-symbols-outlined">
-                                favorite
-                            </span>
-                        </div>
-                        <div class="delete">
-                            <span class="material-symbols-outlined">
-                                delete
-                            </span>
-                        </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$550</p>
+                        <p class="disc">$650</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
                     </div>
                 </div>
-                <p class="prod-name">Gucci duffle bag</p>
-                <div class="price frow">
-                    <p style="color: #DB4444;">$750</p>
-                    <p class="disc">$950</p>
-                </div>
-                <div class="frow">
-                    <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
-                    <p>(65)</p>
-                </div>
-            </div>
 
-        </div>
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart6.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">RGB liquid CPU Cooler</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$1960</p>
+                        <p class="disc">$2160</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart5.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Gucci duffle bag</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$950</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+            </div>
 
     </div>
 
@@ -623,21 +698,33 @@
         <div class="pstr">
             <img src="./assets/poster.png">
             <div class="round-timer">
-              <div class="inner-clock-1">
-              <div class="clock-style-1 ">
-                <div class="round"><div class="c-up">{{d1}}</div> <div class="c-down">Days</div></div>
-              </div>
-              <div class="clock-style-1">
-                <div class="round"><div class="c-up">{{h1}}</div> <div class="c-down">Hours</div></div>
-              </div>
-              <div class="clock-style-1">
-                <div class="round"><div class="c-up">{{m1}}</div> <div class="c-down">Minutes</div></div>
-              </div>
-              <div class="clock-style-1">
-                <div class="round"><div class="c-up">{{s1}}</div> <div class="c-down">Seconds</div></div>
-              </div>
+                <div class="inner-clock-1">
+                    <div class="clock-style-1 ">
+                        <div class="round">
+                            <div class="c-up">{{d1}}</div>
+                            <div class="c-down">Days</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-1">
+                        <div class="round">
+                            <div class="c-up">{{h1}}</div>
+                            <div class="c-down">Hours</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-1">
+                        <div class="round">
+                            <div class="c-up">{{m1}}</div>
+                            <div class="c-down">Minutes</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-1">
+                        <div class="round">
+                            <div class="c-up">{{s1}}</div>
+                            <div class="c-down">Seconds</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
             <div class="buybtn">
                 <button>Buy Now</button>
             </div>
@@ -653,9 +740,13 @@
             <p class="categories" style="color: #DB4444;">Our Products</p>
         </div>
 
+        <div class="title-btn1 frow space">
+            <p class="bro">Explore our Product</p>
+        </div>
+
         <div class="fcol">
 
-            <div class="frow space">
+            <div class="frow space wrap">
 
                 <div>
                     <div class="image-container">
@@ -767,7 +858,7 @@
 
             </div>
 
-            <div class="frow space mrgt">
+            <div class="frow space mrgt downcard">
 
                 <div>
                     <div class="image-container">
@@ -893,15 +984,15 @@
             <p class="categories" style="color: #DB4444;">Featured</p>
         </div>
 
-        <div class="title-btn frow space">
-            <p>New Arrival</p>
+        <div class="title-btn1 mb frow space">
+            <p class="bro">New Arrival</p>
         </div>
 
-        <div class="img-sec frow">
+        <div class="img-sec frowp">
 
             <img class="img1" src="./assets/arrival1.png">
 
-            <div class="image ">
+            <div class="image">
                 <img class="img2" src="./assets/arrival2.png">
 
                 <div class="frow">

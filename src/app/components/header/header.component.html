@@ -31,7 +31,7 @@
                         <p routerLink="/">Home</p>
                         <p routerLink="contact">Contect</p>
                         <p routerLink="about">About</p>
-                        <p routerLink="signup">Sign Up</p>
+                        <p class="sign" routerLink="signup">Sign Up</p>
                     </div>
 
 
@@ -80,10 +80,10 @@
         </div>
 
         <div class="frow link">
-            <p routerLink="/">Home</p>
-            <p routerLink="contact">Contect</p>
-            <p routerLink="about">About</p>
-            <p routerLink="signup">Sign Up</p>
+            <p routerLink="/" class="home-btn">Home</p>
+            <p routerLink="contact" class="con-btn">Contect</p>
+            <p routerLink="about" class="abt-btn">About</p>
+            <p routerLink="signup" class="sign-btn sign">Sign Up</p>
             <p routerLink="product">Product</p>
         </div>
 
@@ -99,21 +99,13 @@
         <div class="icon">
 
             <div>
-                <span class="material-symbols-outlined" routerLink="wishlist" (click)="onHeart()" *ngIf="h1show">
+                <span class="material-symbols-outlined fav-icon" routerLink="wishlist">
                     favorite
                 </span>
-                <span class="material-symbols-outlined" routerLink="wishlist" style="color: #DB4444;"
-                    (click)="onHeart()" *ngIf="h2show">
-                    favorite
-                </span>
-                <span class="material-symbols-outlined" routerLink="cart" *ngIf="s1show" (click)="onShop()">
+                <span class="material-symbols-outlined cart-icon" routerLink="cart" >
                     shopping_cart
                 </span>
-                <span class="material-symbols-outlined" routerLink="cart" style="color: #DB4444;" *ngIf="s2show"
-                    (click)="onShop()">
-                    shopping_cart
-                </span>
-                <span class="material-symbols-outlined acc" routerLink="account" style="z-index: 120;">
+                <span class="material-symbols-outlined acc user-icon" routerLink="account" style="z-index: 120;">
                     account_circle
                 </span>
 
@@ -134,7 +126,7 @@
                         <img class="menu-icon" src="./assets/Icon-Reviews.svg" alt="">
                         <p>My Reviews</p>
                     </div>
-                    <div class="menus frow">
+                    <div class="menus frow" (click)="logOut()">
                         <img class="menu-icon" src="./assets/Icon-logout.svg" alt="">
                         <p>Logout</p>
                     </div>
@@ -148,5 +140,8 @@
     </div>
 
     <hr>
+
+    <p style="display: none;"> {{ getCurrentRoutePath() }} {{hidebutton()}}</p>
+
 
 </div>
