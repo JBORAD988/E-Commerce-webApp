@@ -15,11 +15,13 @@ export class HeaderComponent implements OnInit{
 
   menuShow: boolean = false;
   searchShow: boolean = false;
+  isLoggedIn: boolean = false;
 
    
   constructor(private router: Router, private authentication: AuthenticationService,  private toastr:ToastrService,  private spinner: NgxSpinnerService) {}
+
+
   ngOnInit(): void {
-    
 
     const icon = document.querySelector(".acc") as HTMLElement;
     const menu = document.querySelector(".acc-menu") as HTMLElement;
@@ -53,12 +55,22 @@ export class HeaderComponent implements OnInit{
 
   }
 
+  logoutBtn() {
+    if(localStorage.getItem("token")) {
+      this.isLoggedIn = true;
+    }
+    else {
+      this.isLoggedIn = false;
+    }
+  }
+
 
   hidebutton(){
     const sign = document.querySelector(".sign") as HTMLElement;
 
     if(this.authentication.IsLoggedIn) {
       sign.style.display = 'none';
+
     }
     else{
       sign.style.display = 'block';
