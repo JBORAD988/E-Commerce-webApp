@@ -88,7 +88,12 @@ return from(this.authfire.createUserWithEmailAndPassword(user.Email, user.passwo
     return from(this.authfire.sendPasswordResetEmail(email)).pipe(tap(()=>{
       setTimeout(()=>{
         this.spinner.hide();
+        this.toastr.success('A recovery Email hase been sent to your User Email');
+        this.route.navigate(['login'])
       },2000)
+    },error=>{
+      this.toastr.error("Email does not exist.")
+      this.spinner.hide()
     }))
   }
 

@@ -36,8 +36,6 @@ export class ForgotpassComponent implements OnInit{
     this.isRecoveringpassword=true;
 
     this.auth.recoverpass(this.ForgotForm.value.email).subscribe(()=>{
-      this.toastr.success('A recovery Email hase been sent to your User Email');
-      this.route.navigate(['login'])
       this.isRecoveringpassword = false
     })
   }
