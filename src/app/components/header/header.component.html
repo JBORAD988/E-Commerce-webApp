@@ -128,7 +128,7 @@
                         <img class="menu-icon" src="./assets/Icon-Reviews.svg" alt="">
                         <p>My Reviews</p>
                     </div>
-                    <div class="menus frow" (click)="logOut()">
+                    <div class="menus frow" (click)="logOut()" *ngIf="isLoggedIn">
                         <img class="menu-icon" src="./assets/Icon-logout.svg" alt="">
                         <p>Logout</p>
                     </div>
@@ -143,7 +143,7 @@
 
     <hr>
 
-    <p style="display: none;"> {{ getCurrentRoutePath() }} {{hidebutton()}}</p>
+    <p style="display: none;"> {{ getCurrentRoutePath() }} {{hidebutton()}} {{logoutBtn()}}</p>
 
 
 </div>
