@@ -28,6 +28,9 @@ export class AuthenticationService {
         setTimeout(()=>{
           this.spinner.hide();
         },2000)
+      },error=>{
+        console.log(error)
+        this.spinner.hide();
       })
     )
     }
@@ -59,15 +62,10 @@ return from(this.authfire.createUserWithEmailAndPassword(user.Email, user.passwo
   }
 
   signout() {
-    // localStorage.clear();
-    // this.spinner.show();
-    // setTimeout(() => {
-    //   this.spinner.hide();
-    // }, 1000);
     localStorage.removeItem('token')
     localStorage.removeItem('id')
     this.route.navigate(['login'])
-    
+
 
   }
 
@@ -82,23 +80,23 @@ return from(this.authfire.createUserWithEmailAndPassword(user.Email, user.passwo
       setTimeout(()=>{
         this.spinner.hide();
       },2000)
+    },error=>{
+      console.log(error)
+      this.spinner.hide();
     }))
   }
 
-  // signInWithGoogle(){
-  //   return this.authfire.signInWithPopup(new GoogleAuthProvider());
-  // }
 
   AuthLogin(provider: any) {
     return this.authfire
       .signInWithPopup(provider)
       .then((result) => {
         console.log('You have been successfully logged in!', result.user);
-        return result.user; 
+        return result.user;
       })
       .catch((error) => {
         console.log(error);
-        throw error; 
+        throw error;
       });
   }
 
