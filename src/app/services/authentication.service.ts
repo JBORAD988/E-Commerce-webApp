@@ -6,6 +6,7 @@ import { AngularFirestore } from "@angular/fire/compat/firestore";
 import { NgToastService } from 'ng-angular-popup';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { tap } from 'rxjs/operators';
+import { ToastrService } from 'ngx-toastr';
 // import Swal from 'sweetalert2'
 
 
@@ -16,7 +17,8 @@ import { tap } from 'rxjs/operators';
 export class AuthenticationService {
 
 
-  constructor(private authfire: AngularFireAuth, private route: Router, private firestore: AngularFirestore, private spinner: NgxSpinnerService) { }
+
+    constructor(private authfire: AngularFireAuth, private route: Router, private firestore: AngularFirestore, private spinner: NgxSpinnerService, private toastr:ToastrService,) { }
 
 
   signIn(params: SignIn): Observable<any> {
@@ -28,9 +30,9 @@ export class AuthenticationService {
         setTimeout(()=>{
           this.spinner.hide();
         },2000)
-      },error=>{
-        console.log(error)
+      }, error => {
         this.spinner.hide();
+        this.toastr.error("Invalid Email or Password");
       })
     )
     }
@@ -42,6 +44,8 @@ return from(this.authfire.createUserWithEmailAndPassword(user.Email, user.passwo
     setTimeout(() => {
       this.spinner.hide();
     }, 2000);
+  }, error => {
+    this.toastr.error("Email already exist.")
   })
 );
   }
@@ -79,10 +83,9 @@ return from(this.authfire.createUserWithEmailAndPassword(user.Email, user.passwo
     return from(this.authfire.sendPasswordResetEmail(email)).pipe(tap(()=>{
       setTimeout(()=>{
         this.spinner.hide();
+        this.toastr.success('A recovery Email hase been sent to your User Email');
+        this.route.navigate(['login'])
       },2000)
-    },error=>{
-      console.log(error)
-      this.spinner.hide();
     }))
   }
 
