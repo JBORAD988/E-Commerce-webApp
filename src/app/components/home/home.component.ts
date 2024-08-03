@@ -195,7 +195,7 @@ export class HomeComponent implements OnInit {
 
   timer1() {
     const currentDate = new Date();
-    const targetDate = new Date(2024, 3, 28, 3, 4, 45, 43434);
+    const targetDate = new Date(2024, 12, 28, 3, 4, 45, 43434);
     const timeDifference = targetDate.getTime() - currentDate.getTime();
 
     const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
@@ -212,7 +212,7 @@ export class HomeComponent implements OnInit {
 
   timer2() {
     const currentDate = new Date();
-    const targetDate = new Date(2024, 3, 28, 3, 4, 45, 43434);
+    const targetDate = new Date(2024, 12, 28, 3, 4, 45, 43434);
     const timeDifference = targetDate.getTime() - currentDate.getTime();
 
     const remainingSeconds = Math.floor((timeDifference / 1000) % 60);
