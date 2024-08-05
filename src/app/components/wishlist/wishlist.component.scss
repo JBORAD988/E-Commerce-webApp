@@ -1,0 +1,419 @@
+.wishlist-div {
+
+  padding: 6rem;
+
+  .frow,
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .space {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fcol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page {
+    p {
+      padding-left: 5rem;
+      font-size: 18px;
+    }
+  }
+
+  .bag {
+    height: 2.5rem;
+    width: 11rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 450;
+  }
+
+  .bag:hover {
+    background-color: #DB4444;
+    color: white;
+    border: none;
+  }
+
+  .wishlist-card {
+    padding: 3rem 8rem 2rem 8rem;
+  }
+
+  .wishlist-card2 {
+    padding: 4rem 8rem 0 3rem;
+  }
+
+  .disc {
+    text-decoration: line-through;
+    margin-left: 5px;
+  }
+
+  .prod-name {
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .price p {
+    font-size: 15px;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  i {
+    font-size: 20px;
+    margin-right: 7px;
+  }
+
+  .cart-btn {
+    display: none;
+    position: absolute;
+    width: 16.8rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .image:hover+.cart-btn {
+    display: block;
+  }
+
+  .cart-btn:hover {
+    display: block;
+  }
+
+  .delete {
+    margin-top: 0.6rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 6px 0 0 5px;
+    border-radius: 80%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-50%);
+    border: none;
+    cursor: pointer;
+  }
+
+  .discount {
+    margin-top: 1rem;
+    height: 1.5rem;
+    width: 2.9rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #DB4444;
+    position: absolute;
+    top: 0;
+    left: 12%;
+    padding: 3px 3px 3px 7px;
+    transform: translateX(-50%);
+    border: none;
+  }
+
+  .you {
+
+    padding: 3rem 0 8rem 5.5rem;
+
+    .block {
+      border-radius: 3px;
+      background-color: #DB4444;
+      height: 2.1rem;
+      width: 0.9rem;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      padding: 6px 0 0 12px;
+    }
+
+    .all {
+      height: 2.5rem;
+      width: 9rem;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    .all:hover {
+      border: none;
+      color: white;
+      background-color: #DB4444;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+@media screen and (max-width:450px) {
+
+    .wishlist-div {
+      padding: 2rem;
+  
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+  
+      .page {
+        p {
+          padding-left: 0rem;
+          font-size: 14px;
+        }
+      }
+  
+      .bag {
+        height: 1.7rem;
+        width: 8rem;
+      }
+  
+      .image {
+        height: 8rem;
+        width: 9rem;
+      }
+  
+      .prod-name {
+        font-size: 15px;
+        width: 9rem;
+      }
+  
+      .discount {
+        margin-top: 0.5rem;
+        height: 1rem;
+        width: 2.2rem;
+        left: 18%;
+        padding: 0 1px 0px 6px;
+        transform: translateX(-50%);
+        border: none;
+        font-size: 12px;
+      }
+  
+      .delete {
+        margin-top: 0.3rem;
+        height: 1.7rem;
+        width: 1.7rem;
+        padding: 4px 0 0 4px;
+        top: 0;
+        right: 0;
+  
+        span {
+          font-size: 20px;
+        }
+      }
+  
+      .cart-btn {
+        display: block;
+        width: 9rem;
+        height: 2rem;
+        padding: 0;
+        text-align: center;
+      }
+  
+      i {
+        display: none;
+      }
+  
+      .wishlist-card {
+        padding: 2rem 0 0 0;
+      }
+  
+      .wishlist-card2 {
+          padding: 0.7rem 0 0 0;
+      }
+  
+  
+      .you {
+        padding: 10px 0 0 0;
+  
+        .pading {
+          padding-top: 1rem;
+        }
+  
+        .block {
+          height: 1.7rem;
+        }
+  
+        .title {
+          font-size: 15px;
+          padding: 3px 0 0 5px;
+        }
+  
+        .all {
+          height: 1.7rem;
+          width: 8rem;
+        }
+  
+      }
+  
+    }
+  
+  
+  
+  
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+@media screen and (max-width:395px) {
+
+  .wishlist-div {
+    padding: 2rem;
+
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .page {
+      p {
+        padding-left: 0rem;
+        font-size: 14px;
+      }
+    }
+
+    .bag {
+      height: 1.7rem;
+      width: 8rem;
+    }
+
+    .image {
+      height: 8rem;
+      width: 9rem;
+    }
+
+    .prod-name {
+      font-size: 15px;
+      width: 9rem;
+    }
+
+    .discount {
+      margin-top: 0.5rem;
+      height: 1rem;
+      width: 2.2rem;
+      left: 18%;
+      padding: 0 1px 0px 6px;
+      transform: translateX(-50%);
+      border: none;
+      font-size: 12px;
+    }
+
+    .delete {
+      margin-top: 0.3rem;
+      height: 1.7rem;
+      width: 1.7rem;
+      padding: 4px 0 0 4px;
+      top: 0;
+      right: 0;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .cart-btn {
+      display: block;
+      width: 9rem;
+      height: 2rem;
+      padding: 0;
+      text-align: center;
+    }
+
+    i {
+      display: none;
+    }
+
+    .wishlist-card {
+      padding: 2rem 0 0 0;
+    }
+
+    .wishlist-card2 {
+        padding: 0.7rem 0 0 0;
+    }
+
+
+    .you {
+      padding: 10px 0 0 0;
+
+      .pading {
+        padding-top: 1rem;
+      }
+
+      .block {
+        height: 1.7rem;
+      }
+
+      .title {
+        font-size: 15px;
+        padding: 3px 0 0 5px;
+      }
+
+      .all {
+        height: 1.7rem;
+        width: 8rem;
+      }
+
+    }
+
+  }
+
+
+
+
+
+}

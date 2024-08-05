@@ -1,0 +1,428 @@
+.checkout-div {
+
+  padding: 3rem 7rem 3rem 10rem;
+
+  .page {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .frow, .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fcol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bill {
+    padding-top: 7rem;
+  }
+
+  .bill-form {
+
+    .title {
+      font-size: 28px;
+      font-weight: 500;
+      padding-bottom: 2rem;
+    }
+
+    label {
+      padding-bottom: 5px;
+      color: gray;
+    }
+
+    input {
+      width: 28.6rem;
+      height: 2.3rem;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(235, 235, 235);
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .checkbox {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 8px;
+    }
+
+    .checkbox:checked {
+      accent-color: #DB4444;
+
+    }
+
+  }
+
+  .bill-box {
+
+    width: 27rem;
+    height: auto;
+    margin-left: 30rem;
+    margin-top: 10rem;
+
+    img {
+      width: 4rem;
+      height: 3rem;
+    }
+
+    .bill-details {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bmrg {
+      margin-bottom: 2rem;
+    }
+
+    .prod-name {
+      font-weight: 450;
+      margin-top: 15px;
+      margin-left: 1.2rem;
+    }
+
+    .price {
+      font-weight: 450;
+      font-size: 16px;
+      margin: 15px 10px 0 0;
+    }
+
+    .bill-price {
+      margin-right: 10px;
+      font-weight: 450;
+    }
+
+    hr {
+      margin-top: 0.5rem;
+    }
+
+    .radio-div {
+      margin-top: 1rem;
+    }
+
+    .radio {
+      height: 1.4rem;
+      width: 1.4rem;
+      margin-top: 4px;
+    }
+
+    .radio:checked {
+      accent-color: black;
+    }
+
+    .radio-text {
+      font-weight: 450;
+      margin: 5px 0 0 15px;
+    }
+
+    .img {
+      width: 11.5rem;
+      height: 24px;
+    }
+
+    .cmrg {
+      margin-bottom: 15px;
+    }
+
+    .coupon {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        border-radius: 5px;
+        padding: 15px;
+        width: 15rem;
+        height: 2.8rem;
+      }
+
+      button {
+        height: 2.8rem;
+        width: 10rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #DB4444;
+        color: white;
+      }
+
+      button:hover {
+        background-color: red;
+      }
+    }
+
+    .order {
+      margin-top: 2rem;
+      height: 2.8rem;
+      width: 10rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #DB4444;
+      color: white;
+    }
+
+    .order:hover {
+        background-color: red;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+@media screen and (max-width: 450px) {
+    .checkout-div {
+        padding: 2rem;
+
+        .frow1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mrg {
+            margin-bottom: 20px;
+        }
+
+        .page {
+            p {
+              font-size: 12px;
+            }
+          }
+
+          .bill {
+            padding-top: 2rem;
+          }
+
+          .bill-form {
+
+            .title {
+                font-size: 17px;
+                padding-bottom: 0.2rem;
+            }
+
+            label {
+                padding-bottom: 2px;
+                font-size: 13px;
+            }
+
+            input {
+                height: 1.6rem;
+                width: 15rem;
+                margin-bottom: 10px;
+            }
+
+          }
+
+          .bill-box {
+
+            width: 20rem;
+            height: auto;
+            margin-left: 0;
+            margin-top: 1rem;
+        
+            img {
+              width: 3rem;
+              height: 2rem;
+            }
+        
+            .bmrg {
+              margin-bottom: 1rem;
+            }
+
+            .bill-price {
+                margin-right: 10px;
+            }
+        
+            .prod-name {
+              margin-top: 7px;
+            }
+        
+            .radio {
+              height: 1rem;
+              width: 1rem;
+            }
+
+            .price {
+                margin: 9px 10px 0 0;
+            }
+    
+        
+            .cmrg {
+              margin-bottom: 15px;
+            }
+        
+            .coupon {
+                      
+              input {
+                width: 10rem;
+                height: 2rem;
+              }
+        
+              button {
+                height: 2rem;
+                width: 9rem;
+              }
+        
+
+            }
+        
+            .order {
+              margin-top: 2rem;
+              height: 2rem;
+              width: 8rem;
+            }
+
+        
+          }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
+@media screen and (max-width: 395px) {
+    .checkout-div {
+        padding: 2rem;
+
+        .frow1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page {
+            p {
+              font-size: 12px;
+            }
+          }
+
+          .mrg {
+            margin-bottom: 20px;
+        }
+
+          .bill {
+            padding-top: 2rem;
+          }
+
+          .bill-form {
+
+            .title {
+                font-size: 17px;
+                padding-bottom: 0.2rem;
+            }
+
+            label {
+                padding-bottom: 2px;
+                font-size: 13px;
+            }
+
+            input {
+                height: 1.6rem;
+                width: 15rem;
+                margin-bottom: 10px;
+            }
+
+          }
+
+          .bill-box {
+
+            width: 20rem;
+            height: auto;
+            margin-left: 0;
+            margin-top: 1rem;
+        
+            img {
+              width: 3rem;
+              height: 2rem;
+            }
+        
+            .bmrg {
+              margin-bottom: 1rem;
+            }
+
+            .bill-price {
+                margin-right: 10px;
+            }
+        
+            .prod-name {
+              margin-top: 7px;
+            }
+        
+            .radio {
+              height: 1rem;
+              width: 1rem;
+            }
+
+            .price {
+                margin: 9px 10px 0 0;
+            }
+    
+        
+            .cmrg {
+              margin-bottom: 15px;
+            }
+        
+            .coupon {
+                      
+              input {
+                width: 10rem;
+                height: 2rem;
+              }
+        
+              button {
+                height: 2rem;
+                width: 9rem;
+              }
+        
+
+            }
+        
+            .order {
+              margin-top: 2rem;
+              height: 2rem;
+              width: 8rem;
+            }
+
+        
+          }
+    }
+    }
+
+    

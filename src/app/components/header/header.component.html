@@ -1,10 +1,12 @@
-<div class="h-sec1">
+
+
+<div class="h-sec1" style="z-index: 100;">
     <div class="frow">
         <p class="sale">Summer Sale For All Swim Suits <br class="br"> And Free Express Delivery - OFF 50%!</p>
         <a class="shop" routerLink="">Shop Now</a>
     </div>
     <div class="frow dropdown">
-        <label for="showDrop" class="mobile-item">English</label>
+        <label for="showDrop" class="mobile-item" style="cursor: pointer;">English</label>
         <ul class="drop-menu">
             <li><a href="#">English</a></li>
             <li><a href="#">Hindi</a></li>
@@ -14,51 +16,82 @@
     </div>
 </div>
 
-<div class="stick">
+<div class="stick" style="z-index: 9;">
 
     <div class="h-sec2 frow">
 
-        <div class="frow">
-            <span class="material-symbols-outlined menu" (click)="onToggle()">
-                menu
-            </span>
+        <div class="col">
+            <div class="frow">
+                <span class="material-symbols-outlined menu" (click)="onToggle()">
+                    menu
+                </span>
 
-            <div class="fcol1">
-                <h4>Exclusive</h4>
+                <div class="fcol1">
+                    <h2>Exclusive</h2>
 
-                <div class="menuhide" *ngIf="menuShow">
-                    <p>Home</p>
-                    <p>Contect</p>
-                    <p>About</p>
-                    <p>Sign Up</p>
+                    <div class="menuhide" *ngIf="menuShow">
+                        <p routerLink="/">Home</p>
+                        <p routerLink="contact">Contact</p>
+                        <p routerLink="about">About</p>
+                        <p class="sign" routerLink="signup">Sign Up</p>
+                    </div>
+
+
                 </div>
+
+                <div class="i1 fcol">
+                    <div>
+                        <span class="material-symbols-outlined srch" (click)="onClick()">
+                            search
+                        </span>
+                        <span class="material-symbols-outlined" routerLink="wishlist">
+                            favorite
+                        </span>
+                        <span class="material-symbols-outlined" routerLink="cart">
+                            shopping_cart
+                        </span>
+                        <span class="material-symbols-outlined acc">
+                            account_circle
+                        </span>
+
+                        <div class="acc-menu">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    person
+                                </span>
+                                <p>Manage My Account</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
-            <div class="i1">
-                <span class="material-symbols-outlined">
-                    favorite
-                </span>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
-                <span class="material-symbols-outlined">
-                    account_circle
-                </span>
+            <div class="inp" *ngIf="searchShow">
+                <input type="text" placeholder="What are you looking for">
+                <div style="background-color: rgb(235, 235, 235);">
+                    <span class="material-symbols-outlined srch">
+                        search
+                    </span>
+                </div>
             </div>
 
         </div>
 
         <div class="frow link">
-            <p>Home</p>
-            <p>Contect</p>
-            <p>About</p>
-            <p>Sign Up</p>
+            <p routerLink="/" class="home-btn">Home</p>
+            <p routerLink="contact" class="con-btn">Contact</p>
+            <p routerLink="about" class="abt-btn">About</p>
+            <p routerLink="signup" class="sign-btn sign">Sign Up</p>
+            <p routerLink="product">Product</p>
         </div>
 
         <div class="input-field">
-            <input type="text" placeholder="Search">
-            <div style="background-color: rgb(213, 213, 213);">
+            <input type="text" placeholder="What are you looking for">
+            <div style="background-color: rgb(235, 235, 235);">
                 <span class="material-symbols-outlined srch">
                     search
                 </span>
@@ -66,19 +99,51 @@
         </div>
 
         <div class="icon">
-            <span class="material-symbols-outlined">
-                favorite
-            </span>
-            <span class="material-symbols-outlined">
-                shopping_cart
-            </span>
-            <span class="material-symbols-outlined">
-                account_circle
-            </span>
+
+            <div>
+                <span class="material-symbols-outlined fav-icon" routerLink="wishlist">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined cart-icon" routerLink="cart" >
+                    shopping_cart
+                </span>
+                <span class="material-symbols-outlined acc user-icon" routerLink="account" style="z-index: 120;">
+                    account_circle
+                </span>
+
+                <div class="acc-menu">
+                    <div class="menus frow">
+                        <img class="menu-icon" src="./assets/user.svg" alt="">
+                        <p>Manage My Account</p>
+                    </div>
+                    <div class="menus frow">
+                        <img class="menu-icon" src="./assets/icon-mallbag.svg" alt="">
+                        <p>My orders</p>
+                    </div>
+                    <div class="menus frow">
+                        <img class="menu-icon" src="./assets/icon-cancel.svg" alt="">
+                        <p>My Cancellations</p>
+                    </div>
+                    <div class="menus frow">
+                        <img class="menu-icon" src="./assets/Icon-Reviews.svg" alt="">
+                        <p>My Reviews</p>
+                    </div>
+                    <div class="menus frow" (click)="logOut()" *ngIf="isLoggedIn">
+                        <img class="menu-icon" src="./assets/Icon-logout.svg" alt="">
+                        <p>Logout</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
 
     </div>
 
     <hr>
+
+    <p style="display: none;"> {{ getCurrentRoutePath() }} {{hidebutton()}} {{logoutBtn()}}</p>
+
 
 </div>

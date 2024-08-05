@@ -1,0 +1,277 @@
+.contact-div {
+
+  padding: 3rem;
+
+  .frow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hm {
+    color: gray;
+    padding-left: 7rem;
+  }
+
+  .page {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .details {
+    margin-top: 5rem;
+    margin-left: 13rem;
+  }
+
+  .call {
+
+    margin-bottom: 1.3rem;
+
+    img {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .cd {
+      font-weight: 450;
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+  }
+
+  hr {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .form-details {
+    margin-top: 5rem;
+    margin-left: 8rem;
+  }
+
+  .input {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    padding: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .msg {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    width: 40.8rem;
+    height: 14rem;
+    padding: 10px;
+  }
+
+  .msg:focus {
+    outline: none;
+  }
+
+  .input:focus {
+    outline: none;
+  }
+
+
+  .button {
+    text-align: end;
+    margin-right: 2.2rem;
+    margin-top: 1.5rem;
+
+    button {
+      padding: 12px 38px 12px 38px;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      background-color: #DB4444;
+      margin-bottom: 3.5rem;
+    }
+
+    button:hover {
+      background-color: #dd3131;
+    }
+  }
+
+}
+
+
+.frow1 {
+  display: flex;
+  flex-direction: row;
+}
+
+br {
+  display: none;
+}
+
+
+
+//mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+@media screen and (max-width: 450px) {
+
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fcolr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .frow2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-div {
+    padding: 1rem;
+
+    hr {
+      border: none;
+      border-left: 1px solid black;
+      height: 15rem;
+      margin: 0 45px 0 40px;
+    }
+
+    .frow {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hm {
+      padding-left: 1rem;
+    }
+
+    .form-details {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    .input {
+      padding: 0.7rem;
+      margin-right: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input {
+      width: 16.2rem;
+      margin-left: 2.3rem;
+    }
+
+    .msg {
+      width: 16.2rem;
+      height: 7rem;
+      padding: 10px;
+      margin-left: 2.3rem;
+    }
+
+    .button {
+      text-align: center;
+      // margin-right: 5rem;
+    }
+
+    .details {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+ br {
+  display: block;
+ }
+
+}
+
+
+
+
+
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+@media screen and (max-width: 395px) {
+
+  .frow1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fcolr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .frow2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-div {
+    padding: 1rem;
+
+    hr {
+      border: none;
+      border-left: 1px solid black;
+      height: 15rem;
+      margin: 0 22px 0 22px;
+    }
+
+    .frow {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hm {
+      padding-left: 1rem;
+    }
+
+    .form-details {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    .input {
+      padding: 0.7rem;
+      margin-right: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input {
+      width: 16.2rem;
+      margin-left: 0.7rem;
+    }
+
+    .msg {
+      width: 16.2rem;
+      height: 7rem;
+      padding: 10px;
+      margin-left: 0.7rem;
+    }
+
+    .button {
+      text-align: center;
+      // margin-right: 5rem;
+    }
+
+    .details {
+      margin-top: 1rem;
+      margin-left: 0rem;
+    }
+  }
+
+ br {
+  display: block;
+ }
+
+}

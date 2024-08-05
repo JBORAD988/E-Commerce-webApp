@@ -1,0 +1,1032 @@
+<div class="home-div">
+
+    <div class="move">
+        <img src="./assets/move.png">
+    </div>
+
+    <div class="cat-menu-btn"  (click)="onMenu()">
+        
+        <button style="border: none; background-color: #DB4444 ; color: white; border-radius: 5px; width: 130px ; margin-top: 10px;
+        margin-left: 20px; padding: 1%;">See Catagories</button>
+    </div>
+
+    <div class="sec1 frow">
+
+        <div class="menu" *ngIf="menuShow">
+            <div class="click1 frow">
+                <p class="click1" (click)="wcat()">Woman's Fashion</p>
+                <img class="cat-btn" src="./assets/v2.png">
+                <div class="wcat">
+                    <p>Jeans</p>
+                    <p>Western Wear</p>
+                    <p>Tops & Tees</p>
+                    <p>Dresses & JumpSuit</p>
+                    <p>Shirts</p>
+                    <p>Sleep Wear</p>
+                </div>
+            </div>
+            <div class="click frow">
+                <p class="click">Men's Fashion</p>
+                <img class="cat-btn2 click" src="./assets/v2.png">
+                <div class="mcat">
+                    <p>Jeans & Trousers</p>
+                    <p>T-Shirt</p>
+                    <p>Formal Wear</p>
+                    <p>Sport Wear</p>
+                    <p>Casual & Formal Shoes</p>
+                    <p>SunGlasses & frames</p>
+                </div>
+            </div>
+            <p>Electronics</p>
+            <p>Home & Lifestyle</p>
+            <p>Medicine</p>
+            <p>Sport & Outdoor</p>
+            <p>Baby's & Toy's</p>
+            <p>Groceries & Pets</p>
+            <p>Helath & Beauty</p>
+        </div>
+
+        <div class="menu menuo">
+            <div class="click1 frow">
+                <p class="click1">Woman's Fashion</p>
+                <img class="cat-btn" src="./assets/v2.png">
+                <div class="wcat">
+                    <p>Jeans</p>
+                    <p>Western Wear</p>
+                    <p>Tops & Tees</p>
+                    <p>Dresses & JumpSuit</p>
+                    <p>Shirts</p>
+                    <p>Sleep Wear</p>
+                </div>
+            </div>
+            <div class="click frow">
+                <p class="click">Men's Fashion</p>
+                <img class="cat-btn2 click" src="./assets/v2.png">
+                <div class="mcat">
+                    <p>Jeans & Trousers</p>
+                    <p>T-Shirt</p>
+                    <p>Formal Wear</p>
+                    <p>Sport Wear</p>
+                    <p>Casual & Formal Shoes</p>
+                    <p>SunGlasses & frames</p>
+                </div>
+            </div>
+            <p>Electronics</p>
+            <p>Home & Lifestyle</p>
+            <p>Medicine</p>
+            <p>Sport & Outdoor</p>
+            <p>Baby's & Toy's</p>
+            <p>Groceries & Pets</p>
+            <p>Helath & Beauty</p>
+        </div>
+
+        <hr>
+
+        <div class="prod-swip main-swip">
+
+            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 57rem" loop="true"
+                autoplay='{"delay": 5000, "speed": 1000}'>
+
+
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p1.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p2.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p1.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p2.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+                <!-- <div class="swiper-pagination"></div> -->
+
+            </swiper-container>
+
+        </div>
+
+        <div class="prod-swip med-swip">
+
+            <swiper-container class="swiper-container" effect="cube" grab-cursor="true" style="width: 21rem" loop="true"
+                autoplay='{"delay": 5000, "speed": 1000}'>
+
+
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p1.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p2.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p1.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="imgbtn">
+                        <img src="./assets/p2.png" loading="lazy" />
+                        <div class="shop frow">
+                            <p>Shop Now</p>
+                            <span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+                <div class="swiper-pagination"></div>
+
+            </swiper-container>
+
+        </div>
+
+    </div>
+
+
+    <div class="sec2">
+
+        <div class="frow">
+            <div class="block"></div>
+            <p class="categories" style="color: #DB4444;">Today's</p>
+        </div>
+
+
+        <div class="title-btn frow space">
+            <div class="frow1 justify-content-between" style="width: 550px;">
+                <p class="flash">Flash Sales</p>
+                <div class="inner-dflex-clock1">
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Days</div>
+                            <div class="c-down1">{{d2}}</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Hours</div>
+                            <div class="c-down1">{{h2}}</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Minutes</div>
+                            <div class="c-down1">{{m2}}</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round"><img src="../../../assets/Semiclone.svg"></div>
+                    </div>
+                    <div class="clock-style-2 ">
+                        <div class="round">
+                            <div class="c-up1">Seconds</div>
+                            <div class="c-down1">{{s2}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="pag-btn">
+                <img class="swiper-button-testmonials-next1" src="./assets/leftArrow.png">
+                <img class="swiper-button-testmonials-prev1" src="./assets/rightArrow.png">
+            </div>
+        </div>
+
+        <div class="swiper mySwiper1">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart1.png">
+                        <button class="cart-btn"> <i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="discount">
+                            -35%
+                        </div>
+
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">Gucci duffle bag</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$960</p>
+                        <p class="disc">$1160</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart2.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+
+                        <div class="discount">
+                            -35%
+                        </div>
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$1960</p>
+                        <p class="disc">$2160</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart3.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+
+                        <div class="discount">
+                            -35%
+                        </div>
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$550</p>
+                        <p class="disc">$650</p>
+
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart4.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+
+                        <div class="discount">
+                            -35%
+                        </div>
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">Quilted Satin Jacket</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$960</p>
+
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart5.png">
+                        <button class="cart-btn"> <i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="discount">
+                            -35%
+                        </div>
+
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">Gucci duffle bag</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$1160</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart6.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+
+                        <div class="discount">
+                            -35%
+                        </div>
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">RGB liquid CPU Cooler</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$1960</p>
+                        <p class="disc">$2160</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart7.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+
+                        <div class="discount">
+                            -35%
+                        </div>
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$550</p>
+                        <p class="disc">$650</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart8.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+
+                        <div class="discount">
+                            -35%
+                        </div>
+                        <div class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <p class="prod-name">Quilted Satin Jacket</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$950</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="swiper-pagination"></div>                
+            
+        </div>
+
+        <button class="button">View All Product</button>
+
+        <hr>
+
+    </div>
+
+
+    <div class="sec3">
+
+        <div class="frow">
+            <div class="block"></div>
+            <p class="categories" style="color: #DB4444;">Categories</p>
+        </div>
+
+        <div class="title-btn1 cato frow space">
+            <p class="bro">Browse By Categories</p>
+            <div class="pag-btn">
+                <img class="swiper-button-testmonials-next" src="./assets/leftArrow.png">
+                <img class="swiper-button-testmonials-prev" src="./assets/rightArrow.png">
+            </div>
+        </div>
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-CellPhone-b.png">
+                    <img class="white" src="./assets/Category-CellPhone-w.png">
+                    <p>Phones</p>
+
+                </div>
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-Computer-b.png">
+                    <img class="white" src="./assets/Category-Computer-w.png">
+                    <p>Computers</p>
+
+                </div>
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-SmartWatch-b.png">
+                    <img class="white" src="./assets/Category-SmartWatch-w.png">
+                    <p>SmartWatch</p>
+
+                </div>
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-Camera-b.png">
+                    <img class="white" src="./assets/Category-Camera-w.png">
+                    <p>Camera</p>
+
+                </div>
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-Headphone-b.png">
+                    <img class="white" src="./assets/Category-Headphone-w.png">
+                    <p>HeadPhones</p>
+
+                </div>
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-Gamepad-b.png">
+                    <img class="white" src="./assets/Category-Gamepad-w.png">
+                    <p>Gaming</p>
+
+                </div>
+
+                <div class="swiper-slide cat fcol">
+
+                    <img class="black" src="./assets/Category-Camera-b.png">
+                    <img class="white" src="./assets/Category-Camera-w.png">
+                    <p>Camera</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <hr>
+
+    </div>
+
+
+
+    <div class="sec4">
+
+        <div class="frow">
+            <div class="block"></div>
+            <p class="categories" style="color: #DB4444;">This Month</p>
+        </div>
+
+        <div class="title-btn1 frow space">
+            <p class="bro">Best Selling Product</p>
+            <button class="all">View All</button>
+        </div>
+
+            <div class="frow space wrap">
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart8.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Quilted Satin Jacket</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$950</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart7.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$550</p>
+                        <p class="disc">$650</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart6.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">RGB liquid CPU Cooler</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$1960</p>
+                        <p class="disc">$2160</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart5.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Gucci duffle bag</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                        <p class="disc">$950</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+
+    <div class="sec5">
+
+        <div class="pstr">
+            <img src="./assets/poster.png">
+            <div class="round-timer">
+                <div class="inner-clock-1">
+                    <div class="clock-style-1 ">
+                        <div class="round">
+                            <div class="c-up">{{d1}}</div>
+                            <div class="c-down">Days</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-1">
+                        <div class="round">
+                            <div class="c-up">{{h1}}</div>
+                            <div class="c-down">Hours</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-1">
+                        <div class="round">
+                            <div class="c-up">{{m1}}</div>
+                            <div class="c-down">Minutes</div>
+                        </div>
+                    </div>
+                    <div class="clock-style-1">
+                        <div class="round">
+                            <div class="c-up">{{s1}}</div>
+                            <div class="c-down">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buybtn">
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sec6">
+
+        <div class="frow">
+            <div class="block"></div>
+            <p class="categories" style="color: #DB4444;">Our Products</p>
+        </div>
+
+        <div class="title-btn1 frow space">
+            <p class="bro">Explore our Product</p>
+        </div>
+
+        <div class="fcol">
+
+            <div class="frow space wrap">
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart8.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Quilted Satin Jacket</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart7.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$550</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart6.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">RGB liquid CPU Cooler</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$1960</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart5.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Gucci duffle bag</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="frow space mrgt downcard">
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart1.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Gucci duffle bag</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart2.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">RGB liquid CPU Cooler</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$550</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart3.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">GP11 Shooter USB Gamgepade</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$1960</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-container">
+                        <img class="image" src="./assets/cart4.png">
+                        <button class="cart-btn"><i class="fa fa-shopping-cart"></i>&nbsp; Add To Cart</button>
+                        <div class="fcol">
+                            <div class="delete heart">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="delete">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prod-name">Quilted Satin Jacket</p>
+                    <div class="price frow">
+                        <p style="color: #DB4444;">$750</p>
+                    </div>
+                    <div class="frow">
+                        <p style="color: orange; font-size: 18px;">★ ★ ★ ★ ★</p>
+                        <p>(65)</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="view">View All Products</button>
+
+    </div>
+
+
+    <div class="sec7">
+
+        <div class="frow">
+            <div class="block"></div>
+            <p class="categories" style="color: #DB4444;">Featured</p>
+        </div>
+
+        <div class="title-btn1 mb frow space">
+            <p class="bro">New Arrival</p>
+        </div>
+
+        <div class="img-sec frowp">
+
+            <img class="img1" src="./assets/arrival1.png">
+
+            <div class="image">
+                <img class="img2" src="./assets/arrival2.png">
+
+                <div class="frow">
+                    <img class="img3" src="./assets/arrival3.png">
+                    <img class="img3" src="./assets/arrival4.png">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="service frow">
+
+        <div class="ser1">
+            <img class="serimg" src="./assets/delivery.png">
+            <P class="ex">FREE AND FAST DELIVERY</P>
+            <p class="des">Free delivery for all orders over $140</p>
+        </div>
+
+        <div class="ser1">
+            <img class="serimg" src="./assets/delivery.png">
+            <P class="ex">24/7 CUSTOMER SERVICE</P>
+            <p class="des">Friendly 24/7 customer support</p>
+        </div>
+
+        <div class="ser1">
+            <img class="serimg" src="./assets/delivery.png">
+            <P class="ex">MONEY BACK GUARANTEE</P>
+            <p class="des">We return money within 30 days</p>
+        </div>
+
+    </div>
+
+
+</div>

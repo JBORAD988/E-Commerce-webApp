@@ -1,42 +1,216 @@
-  .form-style input{
-    border:0;
-    height:50px;
-    border-radius:0;
-  border-bottom:1px solid #ebebeb;
+  .container {
+    margin-left: 0;
+    max-width: 100rem
   }
-  .form-style input:focus{
-  border-bottom:1px solid #007bff;
-  box-shadow:none;
-  outline:0;
-  background-color:#ebebeb;
+
+
+
+  .form-style input {
+    border: 0;
+    height: 50px;
+    border-radius: 0;
+    border-bottom: 1px solid #ebebeb;
   }
+
+  .form-style input:focus {
+    border-bottom: 1px solid #007bff;
+    box-shadow: none;
+    outline: 0;
+    background-color: #ebebeb;
+
+    span {
+      background-color: #ebebeb;
+
+    }
+
+  }
+
+
+
   .sideline {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    color:#ccc;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ccc;
   }
-  button{
-  height:50px;
+
+  button {
+    height: 50px;
   }
+
   .sideline:before,
   .sideline:after {
-      content: '';
-      border-top: 1px solid #ebebeb;
-      margin: 0 20px 0 0;
-      flex: 1 0 20px;
+    content: '';
+    border-top: 1px solid #ebebeb;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
   }
 
   .sideline:after {
-      margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
   }
 
 
-  .pd-2-flex{
+  .pd-2-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .color-red {
+    color: #DB4444;
+  }
+
+  .btn-back-color {
+    background-color: #DB4444;
+    color: white;
+  }
+
+  .btn-size {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .img-fluid {
+
+    max-width: 700px;
+    max-height: auto;
+
+  }
+
+  .forgotpass {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .logincard-marg {
+    margin-top: 90px;
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+  }
+
+  .form-css {
+    input {
+      padding-left: 0;
+    }
+  }
+
+  .pswd {
+    position: relative;
+    display: inline-block;
+  }
+
+  .pswd:focus+span {
+    display: block;
+  }
+
+  span:hover {
+    display: block;
+  }
+
+  span {
+    display: none;
+    position: absolute;
+    right: 21.2%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+
+  .redirect-signup {
+    display: none !important;
+
+
+    margin-top: 4%;
+
+    .login-note {
+      color: #5e5e5e;
+
+    }
+
+    .link {
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid #5e5e5e;
+      font-weight: 500;
+      cursor: pointer;
+
+    }
+
+    .link:hover {
+      color: #DB4444;
+      text-decoration: none;
+      border-bottom: 3px solid #DB4444;
+      transition: ease-in-out;
+    }
+
+  }
+
+  .is-invalid {
+    border-bottom-color: red !important;
+  }
+
+  .invalid-feedback {
+  color: red;
+  font-size: 0.9em;
+}
+
+
+
+  @media screen and (max-width:375px) {
+
+    .container {
+      margin-bottom: 4rem;
+      margin-top: 3rem;
+    }
+
+    .logincard-marg {
+      margin-top: 5px;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      h6 {
+        font-size: .9rem;
+        font-weight: 500;
+      }
+
+    }
+
+    .btn-size {
+      padding-left: 110px;
+      padding-right: 110px;
+
+    }
+
+    .pd-2-flex {
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
+
+    .forgotpass {
+      padding-left: 140px;
+    }
+
+
+    .redirect-signup {
+      display: flex !important;
+    }
+
+
+
   }

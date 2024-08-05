@@ -29,6 +29,14 @@ hr {
 
 .f-sec1 {
 
+  h6 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
   p {
     font-size: 13px;
   }
@@ -68,6 +76,7 @@ hr {
   }
 
   h6 {
+    font-size: 20px;
     margin-bottom: 20px;
   }
 
@@ -80,19 +89,21 @@ hr {
   }
 
   h6 {
+    font-size: 20px;
     margin-bottom: 20px;
   }
 }
 
 .f-sec4 {
 
-  margin-left: 9rem;
+  margin-left: 236px;
 
   p {
     font-size: 13px;
   }
 
   h6 {
+    font-size: 20px;
     margin-bottom: 20px;
   }
 }
@@ -105,12 +116,13 @@ hr {
   }
 
   h6 {
+    font-size: 20px;
     margin-left: 10px;
     margin-bottom: 20px;
   }
 
   .qr {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   .play {
@@ -130,8 +142,8 @@ hr {
     }
 
     img {
-      height: 30px;
-      width: 30px;
+      height: 38px;
+      width: 40px;
     }
   }
 
@@ -262,6 +274,7 @@ hr {
     display: block;
     border-color: rgb(255, 255, 255);
     padding: 0;
+    // margin-bottom: 50px;
   }
 
   .ele2 {
@@ -301,6 +314,10 @@ hr {
 
   .copy {
     font-size: 10px;
+  }
+
+  .chr {
+    margin-top: 4rem;
   }
 
 
