@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
+
 import { SignupComponent } from './components/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
@@ -29,15 +30,17 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ErrorComponent } from './components/error/error.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-
     HeaderComponent,
     LoginComponent,
+
     SignupComponent,
     ErrorComponent,
     ContactComponent,
@@ -50,6 +53,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     AccountComponent,
     CheckoutComponent,
     ProductDetailsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
