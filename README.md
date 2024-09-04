@@ -54,13 +54,14 @@ Explore the powerful features of ShopEase:
 
 ![homepage](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/Home.png)
 ![login](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/login.png)
+![manage-account](https://github.com/JBORAD988/E-Commerce-webApp/blob/7566bd2a8dd148e3aa03dda3385f1b7b3a79828d/src/assets/screen-shots/manage%20my%20account.png)
 ![signup](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/singup.png)
 ![product-page](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/Product.png)
 ![cart-page](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/cart.png)
 ![checkout](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/checkout.png)
-![error-404]()
-![error-404]()
-![error-404]()
+![whishlist](https://github.com/JBORAD988/E-Commerce-webApp/blob/7566bd2a8dd148e3aa03dda3385f1b7b3a79828d/src/assets/screen-shots/Whishlist.png)
+![About-us](https://github.com/JBORAD988/E-Commerce-webApp/blob/7566bd2a8dd148e3aa03dda3385f1b7b3a79828d/src/assets/screen-shots/about%20us.png)
+![Contact-us](https://github.com/JBORAD988/E-Commerce-webApp/blob/7566bd2a8dd148e3aa03dda3385f1b7b3a79828d/src/assets/screen-shots/contact%20us.png)
 
 ## How to Use the Website 🖥️
 
