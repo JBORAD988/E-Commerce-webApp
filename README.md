@@ -76,11 +76,7 @@ Explore the powerful features of ShopEase:
 
 ## Contact Us 📞
 
-We're here to help! If you have any questions, concerns, or need assistance, feel free to reach out:
-
-- **Customer Support**: [support@shopease.com](mailto:support@shopease.com)
-- **Phone**: +91 98765 43210
-- **Address**: 456 E-Commerce Avenue, Tech City, Gujarat, India 📍📞🏢
+We're here to help! If you have any questions, concerns, or need assistance, feel free to reach out on Github
 
 Thank you for choosing ShopEase as your trusted online shopping platform. We look forward to serving you and making your shopping experience enjoyable. Happy shopping! 🛍️💻✨
 
