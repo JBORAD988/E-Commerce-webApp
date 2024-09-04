@@ -52,13 +52,15 @@ Explore the powerful features of ShopEase:
 
 ## Demo Screenshots
 
-![homepage](https://example.com/screenshot1)
-![product-page](https://example.com/screenshot2)
-![cart-page](https://example.com/screenshot3)
-![checkout](https://example.com/screenshot4)
-![login](https://example.com/screenshot5)
-![signup](https://example.com/screenshot6)
-![error-404](https://example.com/screenshot7)
+![homepage](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/Home.png)
+![login](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/login.png)
+![signup](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/singup.png)
+![product-page](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/Product.png)
+![cart-page](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/cart.png)
+![checkout](https://github.com/JBORAD988/E-Commerce-webApp/blob/40e955958e5baa8955ebdd143c8e3619bedd5148/src/assets/screen-shots/checkout.png)
+![error-404]()
+![error-404]()
+![error-404]()
 
 ## How to Use the Website 🖥️
 
